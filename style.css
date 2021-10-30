@@ -1,0 +1,94 @@
+
+body {
+    width: 100%;
+    height: 100%;
+    background: white;
+    margin: 0;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.game-pag {
+    width: 100%;
+    height: 100%;
+    min-height: 620px;
+    background: #FFA8B7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.game-pag-window {
+    Width: 370px;
+    Height: 500px;
+    Top: 180px;
+    Left: 580px;
+    background: #FFFFFF;
+    border-radius: 3%;
+    text-align: center;
+}
+
+.text {
+    padding-top: 50px;
+}
+
+.greetings{
+    font-weight: bold;
+    font-size: 18px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    line-height: 30px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+#client-number {
+    Width: 50px;
+    Height: 50px;
+    border-radius: 15px;
+    border: 1px solid #FFA8B7;
+    margin: 30px 0 0;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 30px;
+}
+
+.btn-generate {
+    width: 138px;
+    height: 62px;
+    border: none;
+    background: -webkit-linear-gradient(right, #12B969, #9EE8D2);
+    border-radius: 40px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+}
+
+.btn-start {
+    width: 138px;
+    height: 62px;
+    border: none;
+    background: -webkit-linear-gradient(right, #D40A47, #DCA0B2);
+    border-radius: 50px;
+    color: white;
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+
+
+}
+
+
+.out{
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 10px;
+
+}

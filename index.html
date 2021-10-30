@@ -1,16 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Guess Number</title>
+	<meta charset="utf-8">
+	<title>Guess Game</title>
+	<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <script src="./app.js"></script>
-</body>
+	<section class="header">
+		<h1 class="logo">Guess Game</h1>
+	</section>
 
+	<section class="start-page">
+		<p class="offer">Would you like to play a game?</p>
+		
+		<section class="window">
+				
+			<section>
+			<input type="range" class="controller_1" name="minimal_number">
+				<p class="min_num">Choose minimal number</p>
+			<input type="range" class="controller_2" name="maximal_number">
+				<p class="max_num">Choose maximal number</p>
+			<input type="range" class="controller_3" name="attempts">
+				<p class="attempts_num">Choose number of attempts</p>
+			</section>
+
+			<form>
+				<button class="start_btn"></button>
+				<p class="start_inner_text">Start</p>
+			</form>
+		</section>
+
+	</section>
+
+	<section class="footer"></section>
+</body>
 </html>

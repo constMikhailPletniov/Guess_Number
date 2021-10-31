@@ -8,7 +8,7 @@ body {
     padding-bottom: 50px;
 }
 
-.game-pag {
+.game-page {
     width: 100%;
     height: 100%;
     min-height: 620px;
@@ -19,7 +19,7 @@ body {
     margin: 0 auto;
 }
 
-.game-pag-window {
+.game-page-window {
     Width: 370px;
     Height: 500px;
     Top: 180px;
@@ -44,7 +44,7 @@ body {
     word-wrap: break-word;
 }
 
-#client-number {
+#userValue {
     Width: 50px;
     Height: 50px;
     border-radius: 15px;
@@ -71,7 +71,7 @@ body {
 
 }
 
-.btn-start {
+.btn-exit {
     width: 138px;
     height: 62px;
     border: none;
@@ -81,14 +81,11 @@ body {
     font-family: sans-serif;
     font-size: 15px;
     font-weight: bold;
-
-
 }
 
 
-.out{
+.out {
     font-size: 16px;
     font-family: sans-serif;
     margin: 10px;
-
 }

@@ -1,41 +1,87 @@
-
 body {
-    width: 100%;
-    height: 100%;
-    background: white;
     margin: 0;
-    padding-top: 50px;
-    padding-bottom: 50px;
+}
+
+.mainWrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    height: 7vh;
+    background: #FFFFFF;
+}
+
+
+.fireworks-and-game-block{
+    margin:0 auto;
+    display: flex;
 }
 
 .game-page {
-    width: 100%;
-    height: 100%;
-    min-height: 620px;
+    height: 86vh;
     background: #FFA8B7;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+}
+
+.game-block{
+    display: block;
+    width: 595px;
 }
 
 .game-page-window {
-    Width: 370px;
-    Height: 500px;
+    Width: 400px;
+    Height: 300px;
     Top: 180px;
     Left: 580px;
     background: #FFFFFF;
     border-radius: 3%;
     text-align: center;
+    margin: 40px auto 0;
 }
 
-.text {
-    padding-top: 50px;
+.img{
+    align-items: center;
+    justify-content: center;
+    display:none ;
 }
 
-.greetings{
+img {
+    width: 237px;
+    height: 442px;
+}
+
+h2{
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 10px;
+}
+
+.greetings {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 25px;
+    width: 80%;
+    margin: 0 auto;
+    font-family: sans-serif;
+    line-height: 30px;
+    text-align: center;
+    word-wrap: break-word;
+}
+
+.logo {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.05em;
+    color: #000000;
+}
+
+.total-number-of-attempts{
+    font-weight: bold;
+    font-size: 25px;
     width: 80%;
     margin: 0 auto;
     font-family: sans-serif;
@@ -45,11 +91,13 @@ body {
 }
 
 #userValue {
-    Width: 50px;
+    Width: 320px;
     Height: 50px;
     border-radius: 15px;
     border: 1px solid #FFA8B7;
     margin: 30px 0 0;
+    font-size: 20px;
+    text-align: center;
 }
 
 .buttons {
@@ -59,33 +107,57 @@ body {
 }
 
 .btn-generate {
-    width: 138px;
+    width: 158px;
     height: 62px;
     border: none;
-    background: -webkit-linear-gradient(right, #12B969, #9EE8D2);
+    background: #56e356;
     border-radius: 40px;
     color: white;
     font-family: sans-serif;
     font-size: 15px;
     font-weight: bold;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3), -23px 0 20px -23px rgba(0, 0, 0, .6), 23px 0 20px -23px rgba(0, 0, 0, .6), inset 0 0 40px rgba(0, 0, 0, .1);
+}
 
+.btn-generate:active{
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.18) inset;
 }
 
 .btn-exit {
-    width: 138px;
+    width: 158px;
     height: 62px;
     border: none;
-    background: -webkit-linear-gradient(right, #D40A47, #DCA0B2);
+    /*background:  #fc6262;*/
+    background:  #ff6363;
     border-radius: 50px;
     color: white;
     font-family: sans-serif;
     font-size: 15px;
     font-weight: bold;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3), -23px 0 20px -23px rgba(0, 0, 0, .6), 23px 0 20px -23px rgba(0, 0, 0, .6), inset 0 0 40px rgba(0, 0, 0, .1);
 }
 
+.btn-exit:active{
+    box-shadow: 0 4px 0 rgba(0, 0, 0, 0.18) inset;
+}
 
 .out {
     font-size: 16px;
     font-family: sans-serif;
-    margin: 10px;
+    width: 95%;
+    max-width: 335px;
+    margin: 10px auto;
+}
+
+.remaining-attempts{
+    font-size: 16px;
+    font-family: sans-serif;
+    width: 95%;
+    max-width: 335px;
+    margin: 10px auto;
+}
+
+footer{
+    height: 7vh;
+    background: #FFFFFF;
 }

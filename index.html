@@ -6,11 +6,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
     <title>Guess Number</title>
+
 </head>
 
 <body>
-    <script src="./app.js"></script>
+<div class="mainWrapper">
+    <header class="logo">Guess game</header>
+
+    <div class="game-page">
+
+        <div class="fireworks-and-game-block">
+            <div class="img">
+                <img src="img/fireworks_PNG15695.png">
+            </div>
+
+            <div class="game-block">
+                <div class="heading-wrapper">
+                    <h2 class="greetings"></h2>
+                    <h2 class="total-number-of-attempts"></h2>
+                </div>
+
+                <div class="game-page-window">
+                    <input id="userValue" type="number" min="1" max="200">
+
+                    <div class="buttons">
+                        <button class="btn-generate"
+                                title="This button will check if the number you entered is correct">GENERATE
+                        </button>
+                        <button title="This button will end the game" class="btn-exit">EXIT</button>
+                    </div>
+
+                    <div class="out"></div>
+
+                    <div class="remaining-attempts"></div>
+                </div>
+            </div>
+
+            <div class="img">
+                <img src="img/fireworks_PNG15695.png">
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer></footer>
+</div>
+
+<script src="./app.js"></script>
 </body>
 
 </html>

@@ -1,16 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>Guess Number</title>
+	<meta charset="utf-8">
+	<title>Guess Game</title>
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap" rel="stylesheet">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <script src="./app.js"></script>
-</body>
+	<header>
+		<h1 class="logo">Guess Game</h1>
+	</header>
 
+	<section class="start-page">
+		<label class="offer">Would you like to play a game?</label>
+
+		<div class="window">
+
+			<form oninput="result1.value=parseInt(minValue.value)">
+				<label class="min_num" for="minValue">
+					<input type="range" name="minValue" id="minValue" value="1" min="1" max="199" step="1">Choose minimal number</label>
+				<p><output name="result1">1</output></p>
+			</form>
+
+			<form oninput="result2.value=parseInt(maxValue.value)">
+				 <label class="max_num" for="maxValue">
+					<input type="range" name="maxValue" id="maxValue" value="2" min="2" max="200" step="1">Choose maximal number</label>
+				<p><output name="result2">1</output></p>
+			</form>
+
+
+			<form oninput="result3.value=parseInt(attempts.value)">
+				 <label class="attempts_num" for="attempts">
+					<input type="range" name="attempts" id="attempts" value="1" min="1" max="15" step="1">Choose number of attempts</label>
+				<p><output name="result3">1</output></p>
+			</form>
+
+		<div class="button">
+			<button id="btn-start">START</button>
+			</div>
+		</div>
+	</section>
+
+	<footer></footer>
+</body>
 </html>

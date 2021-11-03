@@ -18,29 +18,40 @@
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
-	<section class="header">
+	<header>
 		<h1 class="logo">Guess Game</h1>
-	</section>
+	</header>
 
 	<section class="start-page">
 		<label class="offer">Would you like to play a game?</label>
 
-		<section class="window">
+		<div class="window">
 
-			<input type="range" id="min-number" name="minimal_number" value="1">
-				<label class="min_num">Choose minimal number</label>
+			<form oninput="result1.value=parseInt(minValue.value)">
+				<label class="min_num" for="minValue">
+					<input type="range" name="minValue" id="minValue" value="1" min="1" max="199" step="1">Choose minimal number</label>
+				<p><output name="result1">1</output></p>
+			</form>
 
-			<input type="range" id="max-number" name="maximal_number" value="1">
-				<label class="max_num">Choose maximal number</label>
+			<form oninput="result2.value=parseInt(maxValue.value)">
+				 <label class="max_num" for="maxValue">
+					<input type="range" name="maxValue" id="maxValue" value="2" min="2" max="200" step="1">Choose maximal number</label>
+				<p><output name="result2">1</output></p>
+			</form>
 
-			<input type="range" id="attempts" name="attempts" value="1">
-				<label class="attempts_num">Choose number of attempts</label>
-		<section class="button">
+
+			<form oninput="result3.value=parseInt(attempts.value)">
+				 <label class="attempts_num" for="attempts">
+					<input type="range" name="attempts" id="attempts" value="1" min="1" max="15" step="1">Choose number of attempts</label>
+				<p><output name="result3">1</output></p>
+			</form>
+
+		<div class="button">
 			<button id="btn-start">START</button>
-			</section>
-		</section>
+			</div>
+		</div>
 	</section>
 
-	<section class="footer"></section>
+	<footer></footer>
 </body>
 </html>

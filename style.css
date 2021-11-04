@@ -159,8 +159,8 @@ body {
     margin: 0;
 }
 
-.mainWrapper{
-    display: flex;
+.game-page{
+    display: none;
     flex-direction: column;
 }
 
@@ -175,7 +175,7 @@ header{
     display: flex;
 }
 
-.game-page {
+.game-page-block {
     height: 86vh;
     background: #FFA8B7;
     display: flex;

@@ -323,3 +323,32 @@ footer{
     height: 7vh;
     background: #FFFFFF;
 }
+
+.button {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 30px;
+}
+
+#btn-start {
+    
+    width: 209px;
+    height: 62px;
+    left: 11%;
+    top: 72%;
+
+    background: -webkit-linear-gradient(140.16deg, #4F5FE2 46.88%, #FFFFFF 112.25%);
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3), 
+    -23px 0 20px -23px rgba(0, 0, 0, .6), 
+    23px 0 20px -23px rgba(0, 0, 0, .6), 
+    inset 0 0 40px rgba(0, 0, 0, .1);
+
+    border-radius: 40px;
+    border: none;
+
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -78,7 +78,7 @@ section {
 }
 
 .window {
-    display: flex;
+    display: flow-root;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;

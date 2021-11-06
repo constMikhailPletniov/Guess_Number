@@ -10,7 +10,98 @@
 </head>
 
 <body>
+    <header>
+        <h1 class="logo">Guess Game</h1>
+    </header>
+    <section class="start-page">
+
+        <label class="offer">Would you like to play a game?</label>
+
+        <div class="window">
+
+            <form oninput="result1.value=parseInt(minValue.value)">
+                <label class="min_num" for="minValue">
+                    <input type="range" name="minValue" id="minValue" value="1" min="1" max="199" step="1">Choose
+                    minimal number</label>
+                <p><output name="result1">1</output></p>
+            </form>
+
+            <form oninput="result2.value=parseInt(maxValue.value)">
+                <label class="max_num" for="maxValue">
+                    <input type="range" name="maxValue" id="maxValue" value="2" min="2" max="200" step="1">Choose
+                    maximal number</label>
+                <p><output name="result2">2</output></p>
+            </form>
+
+
+            <form oninput="result3.value=parseInt(attempts.value)">
+                <label class="attempts_num" for="attempts">
+                    <input type="range" name="attempts" id="attempts" value="1" min="1" max="15" step="1">Choose number
+                    of attempts</label>
+                <p><output name="result3">1</output></p>
+            </form>
+
+            <div class="button">
+                <button id="btn-start">START</button>
+            </div>
+        </div>
+    </section>
+
+    <footer></footer>
+
+    <div class="game-page">
+
+        <div class="mainWrapper">
+
+            <header class="logo">Guess game</header>
+
+            <div class="game-page-block">
+
+                <div class="fireworks-and-game-block">
+                    <div class="img">
+                        <img src="img/fireworks_PNG15695.png">
+                    </div>
+
+                    <div class="game-block">
+                        <div class="heading-wrapper">
+                            <h2 class="greetings"></h2>
+                            <h2 class="total-number-of-attempts"></h2>
+                        </div>
+
+                        <div class="game-page-window">
+                            <input id="userValue" type="number" min="1" max="200">
+
+                            <div class="buttons">
+                                <button class="btn-generate"
+                                    title="This button will check if the number you entered is correct">GENERATE
+                                </button>
+                                <button title="This button will end the game" class="btn-exit">EXIT</button>
+                            </div>
+
+                            <div class="out"></div>
+
+                            <div class="remaining-attempts"></div>
+                        </div>
+                    </div>
+
+                    <div class="img">
+                        <img src="img/fireworks_PNG15695.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer></footer>
+    </div>
+    <script src="./domObjects.js"></script>
+    <script src="./btnStart.js"></script>
+    <script src="./buttonGenerate.js"></script>
+    <script src="./buttonExit.js"></script>
+    <script src="./random.js"></script>
     <script src="./app.js"></script>
+
+
+
 </body>
 
 </html>

@@ -6,6 +6,6 @@ function buttonStart() {
 
     dom.sectionStartPage.style.display = 'none';
     dom.sectionGamePage.style.display = 'flex';
-    dom.divGreetings.textContent = `Привет, я загадал число от ${minValue} до ${maxValue} вашего диапазона.`;
-    dom.totalNumbersOfAttempts.textContent = `Попробуй угадать его за ${attempts} попыток!`;
+    dom.divGreetings.textContent = `Hello, I thought of a number from ${minValue} to ${maxValue} Your range.`;
+    dom.totalNumbersOfAttempts.textContent = `Try to guess it for ${attempts} attempts!`;
 }

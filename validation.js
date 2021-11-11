@@ -1,3 +1,5 @@
+let blocksTextError = document.querySelectorAll('.error');
+
 dom.inputMin.addEventListener('input', validationInput);
 dom.inputMax.addEventListener('input', validationInput);
 dom.inputAttempts.addEventListener('input', validationInput);

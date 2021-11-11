@@ -13,5 +13,5 @@ const dom = {
     divImg: document.querySelector('.img'),
     remainingAttempts: document.querySelector('.remaining-attempts'),
     exitBtn: document.querySelector('.btn-exit'),
-    blocksTextError:document.querySelectorAll('.error')
+    // blocksTextError:document.querySelectorAll('.error')
 }

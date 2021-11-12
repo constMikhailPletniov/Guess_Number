@@ -28,11 +28,12 @@ h1 {
     align-items: center;
     margin: 0 auto;
     box-sizing: border-box;
-    display: block;
+    display: flex;
 }
 
 .wrapper-start-page {
     margin: auto;
+
 }
 
 section {
@@ -166,13 +167,6 @@ label {
     color: #000000;
 }
 
-.error {
-    display: none;
-    margin-top: 5%;
-    font-family: 'Istok Web', sans-serif;
-    font-size: 15px;
-    color: red;
-}
 
 .button-start-wrapper{
     padding-top: 40px;
@@ -195,7 +189,7 @@ label {
 }
 
 .img-question {
-    margin-top: 8%;
+    margin-top: 4%;
 }
 
 .question {
@@ -209,7 +203,7 @@ label {
     width: 320px;
     background: #ffffff;
     position: absolute;
-    top: 38%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%, -20%);
     box-shadow: 0 5px 10px 2px rgb(34 60 80 / 20%);
@@ -367,6 +361,9 @@ h2 {
 .btn-generate:disabled {
     background: #EDEBEB;
 }
+#btn-start:disabled{
+    background: #EDEBEB;
+}
 
 .btn-exit {
     width: 150px;
@@ -390,6 +387,11 @@ h2 {
 
 .btn-exit:active {
     box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.18) inset;
+}
+
+.error{
+    height: 20px;
+    padding-top: 10px;
 }
 
 .out {

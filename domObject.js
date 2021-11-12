@@ -10,8 +10,11 @@ const dom = {
     generateBtn: document.querySelector('.btn-generate'),
     inputUser: document.querySelector('#userValue'),
     divOut: document.querySelector('.out'),
-    divImg: document.querySelector('.img'),
+    divImg: document.querySelectorAll('.img'),
     remainingAttempts: document.querySelector('.remaining-attempts'),
     exitBtn: document.querySelector('.btn-exit'),
-    // blocksTextError:document.querySelectorAll('.error')
-}
+    blocksTextError:document.querySelectorAll('.error'),
+    questionIcon:document.querySelector('.question'),
+    instruction:document.querySelector('.instruction'),
+    windowElement:document.querySelector('.window')
+};

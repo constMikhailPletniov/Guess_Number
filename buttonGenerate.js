@@ -1,7 +1,7 @@
 function buttonGenerate() {
     userValue = Number(dom.inputUser.value);
     count++;
-    attempts--;
+    --attempts;
 
     switch (true) {
         case (count === 1 && randomValue !== userValue):
@@ -18,7 +18,11 @@ function buttonGenerate() {
         case randomValue === userValue:
             dom.divOut.textContent = `Congratulations! You guessed the intended number in ${count} tries`;
             dom.generateBtn.disabled = true;
-            dom.divImg.display = 'block';
+
+            for(let item of dom.divImg){
+                console.log(item)
+                item.style.display = 'block';
+            }
             break;
         case (count >= 2 && randomValue !== userValue):
             prevNum.push(userValue);

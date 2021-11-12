@@ -71,11 +71,11 @@
                            title="This field is for entering the number of attempts">
                 </label>
 
-                <div class="error">Error</div>
-
                 <div class="button-start-wrapper">
                     <button id="btn-start" title="This button starts the game">START</button>
                 </div>
+
+                <div class="error"></div>
 
                 <div class="img-question">
                     <img class="question" alt="question" src="img/questionmark_83826.svg">
@@ -90,7 +90,7 @@
         <div class="game-page-block">
             <div class="fireworks-and-game-block">
                 <div class="img">
-                    <img alt="fireworks" src="img/fireworks_PNG15695.png">
+                    <img alt="fireworks" src="./img/fireworks_PNG15695.png">
                 </div>
 
                 <div class="game-block">
@@ -104,8 +104,6 @@
                             <input class="input" id="userValue" placeholder="Enter your number"
                                    title="Enter your number" type="number" min="1" max="200">
                         </label>
-
-                        <div class="error">Error</div>
 
                         <div class="buttons">
                             <div class="buttons-generate-wrapper">
@@ -121,13 +119,15 @@
                             </div>
                         </div>
 
+                        <div class="error"></div>
+
                         <div class="out"></div>
                         <div class="remaining-attempts"></div>
                     </div>
                 </div>
 
                 <div class="img">
-                    <img alt="fireworks" src="img/fireworks_PNG15695.png">
+                    <img alt="fireworks" src="./img/fireworks_PNG15695.png">
                 </div>
             </div>
         </div>
@@ -137,14 +137,15 @@
 
 <footer></footer>
 
-<script src="./domObjects.js"></script>
+<script src="./domObject.js"></script>
 <script src="./btnStart.js"></script>
 <script src="./buttonGenerate.js"></script>
 <script src="./buttonExit.js"></script>
 <script src="./random.js"></script>
-
-<script src="./app.js"></script>
 <script src="./validation.js"></script>
+<script src="./question.js"></script>
+<script src="./app.js"></script>
+
 </body>
 
 </html>

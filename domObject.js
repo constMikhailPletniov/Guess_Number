@@ -16,5 +16,5 @@ const dom = {
     blocksTextError:document.querySelectorAll('.error'),
     questionIcon:document.querySelector('.question'),
     instruction:document.querySelector('.instruction'),
-    windowElement:document.querySelector('.window')
+    windowElement:document.querySelector('.container')
 };

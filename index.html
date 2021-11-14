@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Guess Number</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" id="theme">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,6 +27,7 @@
 <body>
 <header>
     <h1 class="logo">Guess Game</h1>
+    <button id="btn-change-subject"></button>
 </header>
 
 <div class="start-page">
@@ -69,8 +70,14 @@
 
                     <div class="error"></div>
 
-                    <div class="button-start-wrapper">
-                        <button id="btn-start" title="This button starts the game">START</button>
+                    <div class="btn-wrapper-start-page">
+                        <div class="button-start-wrapper">
+                            <button id="btn-start" title="This button starts the game">START</button>
+                        </div>
+
+                        <div class="button-clear-wrapper">
+                            <button id="btn-clear" title="This button clears the input fields">CLEAR</button>
+                        </div>
                     </div>
 
                 </div>
@@ -137,6 +144,7 @@
 <script src="./btnStart.js"></script>
 <script src="./buttonGenerate.js"></script>
 <script src="./buttonExit.js"></script>
+<script src="changeSubject.js"></script>
 <script src="./random.js"></script>
 <script src="./validation.js"></script>
 <script src="./question.js"></script>

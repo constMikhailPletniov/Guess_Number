@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Guess Number</title>
     <link rel="stylesheet" href="style.css" id="theme">
@@ -20,6 +19,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 </head>
@@ -29,16 +29,15 @@
     <h1 class="logo">Guess Game</h1>
 
     <div class="rules-wrapper">
-        <button class="rules">rules</button>
-        <!--       <img class="question" alt="question" src="img/questionmark_83826.svg">-->
+        <button class="rules" title="This button will show the rules of the game.">rules</button>
     </div>
 
     <div class="wrapper-btn-change">
-        <button id="btn-change-subject"></button>
+        <button id="btn-change-subject" title="This button will change the screen theme."></button>
     </div>
 
     <div class="wrapper-lang">
-        <button id="lang">ru</button>
+        <button id="lang" title="This button will change the language of the game">ru</button>
     </div>
 
 </header>
@@ -61,24 +60,25 @@
 
             <div class="container">
                 <div class="container-wrapper">
+                    <form class="form-Start-page">
+                        <div class="min_num" for="minValue">
+                            <input type="number" name="minValue" class="input" id="minValue"
+                                   placeholder="Enter the minimum number between 1 and 199"
+                                   title="This field is for entering the minimum number">
+                        </div>
 
-                    <div class="min_num" for="minValue">
-                        <input type="number" name="minValue" class="input" id="minValue"
-                               placeholder="Enter the minimum number between 1 and 199"
-                               title="This field is for entering the minimum number">
-                    </div>
+                        <div class="max_num" for="maxValue">
+                            <input type="number" name="maxValue" class="input" id="maxValue"
+                                   placeholder="Enter the maximum number between 2 and 200"
+                                   title="This field is for entering the maximum number">
+                        </div>
 
-                    <div class="max_num" for="maxValue">
-                        <input type="number" name="maxValue" class="input" id="maxValue"
-                               placeholder="Enter the maximum number between 2 and 200"
-                               title="This field is for entering the maximum number">
-                    </div>
-
-                    <div class="attempts_num" for="attempts">
-                        <input type="number" name="attempts" class="input" id="attempts"
-                               placeholder="Enter the number of attempts"
-                               title="This field is for entering the number of attempts">
-                    </div>
+                        <div class="attempts_num" for="attempts">
+                            <input type="number" name="attempts" class="input" id="attempts"
+                                   placeholder="Enter the number of attempts"
+                                   title="This field is for entering the number of attempts">
+                        </div>
+                    </form>
 
                     <div class="error"></div>
 
@@ -100,6 +100,14 @@
 <div class="game-page">
     <div class="mainWrapper">
         <div class="game-page-block">
+
+            <div class="instruction">
+                <p>To start playing, enter in the first field your minimum value from 1 to 199. In the second field,
+                    enter a value from 2 to 200. In the third field, enter the number of attempts from 1 to 15 and click
+                    Start.</p>
+                <p>Enter in the input field your value from minimum to maximum value and press the Generate button. If
+                    you want to end the game, click the exit button.</p>
+            </div>
             <div class="fireworks-and-game-block">
                 <div class="img">
                     <img alt="fireworks" src="./img/fireworks_PNG15695.png">
@@ -112,10 +120,12 @@
                     </div>
 
                     <div class="game-page-window">
-                        <div class="field-for-userValue">
-                            <input class="input" id="userValue" placeholder="Enter your number"
-                                   title="Enter your number" type="number" min="1" max="200">
-                        </div>
+                        <form class="form-Game-page">
+                            <div class="field-for-userValue">
+                                <input class="input" id="userValue" placeholder="Enter your number"
+                                       title="Enter your number" type="number" min="1" max="200">
+                            </div>
+                        </form>
 
                         <div class="error"></div>
 

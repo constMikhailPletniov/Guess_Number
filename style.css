@@ -1,6 +1,4 @@
 body {
-    width: 100%;
-    height: 100%;
     background: white;
     margin: 0;
     transition: 1s;
@@ -10,26 +8,26 @@ header {
     height: 7vh;
     display: flex;
     background: #e7c6ff;
+    align-items: center;
 }
 
 .logo {
+    width: 170px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
     font-size: 23px;
-    line-height: 29px;
     letter-spacing: 0.05em;
     color: white;
-    font-style: normal;
     text-shadow: 4px 3px 0 rgba(0, 0, 0, 0.08),
     5px 4px 0 rgba(0, 0, 0, 0.11);
+    padding: 0 20px;
 }
 
 h1 {
-    margin: auto 30px;
+    margin: 0;
 }
 
 .start-page {
-    width: 100%;
     height: 86vh;
     min-height: 460px;
     background: #c77dff;
@@ -69,21 +67,20 @@ section {
     justify-content: center;
     align-items: center;
     width: 440px;
-    height: 380px;
+    height: 350px;
     background: #FFFFFF;
     border-radius: 15px;
     text-align: center;
     margin: 35px auto;
     transition: all .5s ease-out;
-    box-shadow: 1px 1px 1px rgb(0 0 0 / 20%),
-    2px 2px 2px rgb(0 0 0 / 20%);
     position: relative;
 }
 
 .container-wrapper {
-    width: 342px;
+    width: 100%;
+    height: 100%;
     display: inline-block;
-    padding-top: 15px;
+    margin: auto;
 }
 
 input::placeholder {
@@ -99,14 +96,13 @@ input::placeholder {
 }
 
 .input:hover {
-    box-shadow: 1px 1px 1px rgb(0 0 0 / 15%),
-    2px 2px 2px rgb(0 0 0 / 15%);
+    box-shadow:  0 5px 30px 0 rgba(0,0,0,0.2);
 }
 
 input {
     display: block;
     cursor: pointer;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 button {
@@ -117,13 +113,14 @@ label {
     display: block;
 }
 
-#minValue {
+#minValue, #maxValue, #attempts {
     width: 335px;
     height: 42px;
     border-radius: 15px;
     border: 1px solid #FFA8B7;
     font-size: 20px;
     text-align: center;
+    margin: auto;
 }
 
 .min_num {
@@ -138,30 +135,8 @@ label {
     margin-top: 25px;
 }
 
-#maxValue {
-    width: 335px;
-    height: 42px;
-    border-radius: 15px;
-    border: 1px solid #FFA8B7;
-    font-size: 20px;
-    text-align: center;
-}
-
-#attempts {
-    width: 335px;
-    height: 42px;
-    border-radius: 15px;
-    border: 1px solid #FFA8B7;
-    font-size: 20px;
-    text-align: center;
-}
-
-.button-start-wrapper {
-    padding-top: 20px;
-}
-
-.button-clear-wrapper {
-    padding-top: 20px;
+.button-start-wrapper, .button-clear-wrapper {
+    padding-top: 5px;
 }
 
 #btn-start:hover {
@@ -175,15 +150,10 @@ label {
     box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.18) inset;
 }
 
-.instruction-wrapper {
-    width: 100%;
-}
-
 .rules-wrapper {
-    /*position: absolute;*/
-    /*left: 393px;*/
-    /*top: 300px;*/
-    margin: 10px;
+    width: 70px;
+    align-items: center;
+    text-align: center;
 }
 
 .rules {
@@ -195,28 +165,22 @@ label {
     width: 50px;
     height: 30px;
     border: solid 1px gray;
-    background: #ffc6ff;
+    background: #ff8fa3;
     border-radius: 40px;
 }
-
-/*.question {*/
-/*    width: 30px;*/
-/*    height: 25px;*/
-/*    cursor: pointer*/
-/*}*/
 
 .instruction {
     display: none;
     width: 320px;
     background: #ffffff;
-    position: absolute;
-    top: 41%;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    box-shadow: 0 5px 10px 2px rgb(34 60 80 / 20%);
+    box-shadow:  0 5px 30px 0 rgba(0,0,0,0.2);
     padding: 20px;
     border-radius: 5px;
     z-index: 999;
+    position: absolute;
+    top: 52.3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .instruction p {
@@ -226,8 +190,8 @@ label {
 }
 
 .wrapper-lang {
-    /*cursor: pointer;*/
-    margin: 10px;
+    width: 70px;
+    text-align: center;
 }
 
 #lang {
@@ -239,7 +203,7 @@ label {
     width: 50px;
     height: 30px;
     border: solid 1px gray;
-    background: #ffc6ff;
+    background: #ff8fa3;
     border-radius: 40px;
 }
 
@@ -265,7 +229,6 @@ label {
     display: block;
     width: 595px;
     height: 540px;
-    padding-top: 20px;
     box-sizing: border-box;
 }
 
@@ -275,10 +238,9 @@ label {
     background: #FFFFFF;
     border-radius: 15px;
     text-align: center;
-    margin: 18px auto 0;
+    margin: 18px auto;
     padding: 22px 0;
-    box-shadow: 1px 1px 1px rgb(0 0 0 / 20%),
-    2px 2px 2px rgb(0 0 0 / 20%);
+    box-shadow:  0 5px 30px 0 rgba(0,0,0,0.2);
 }
 
 .img {
@@ -406,13 +368,14 @@ h2 {
     height: 30px;
     border: solid 1px gray;
     border-radius: 40px;
-    cursor: pointer
+    cursor: pointer;
 }
 
 .wrapper-btn-change {
     width: 50px;
-    margin: auto 20px;
-    cursor: pointer
+    /*===*/
+    cursor: pointer;
+    text-align: center;
 }
 
 .error {
@@ -457,6 +420,8 @@ h2 {
 .btn-wrapper-start-page {
     display: flex;
     justify-content: space-between;
+    width: 342px;
+    margin: 10px auto;
 }
 
 #btn-start {
@@ -503,5 +468,309 @@ h2 {
 
 footer {
     height: 7vh;
+    width: 100%;
     background: #e7c6ff;
 }
+
+@media screen and (max-width: 768px) {
+
+    .container {
+        width: 400px;
+        height: 300px;
+    }
+
+    .offer {
+        font-size: 35px;
+    }
+
+    #minValue, #maxValue, #attempts {
+        width: 330px;
+        height: 30px;
+        margin: auto;
+    }
+
+    #userValue {
+        width: 300px;
+        height: 30px;
+        margin: auto;
+    }
+
+    #btn-clear, #btn-start {
+        height: 34px;
+        width: 150px;
+    }
+
+    .btn-generate, .btn-exit {
+        height: 34px;
+        width: 150px;
+    }
+
+    .logo {
+        width: 150px;
+        font-size: 21px;
+    }
+
+    .game-block {
+        height: 420px;
+        width: 410px;
+    }
+
+    .buttons {
+        margin: 10px;
+    }
+
+    .game-page-window {
+        width: 370px;
+        height: 120px;
+    }
+
+    .greetings, .total-number-of-attempts {
+        width: 420px;
+        font-size: 24px;;
+        line-height: 30px;
+    }
+
+    .error {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .instruction p {
+        line-height: 23px;
+        margin-top: 5px;
+    }
+
+    .out, .remaining-attempts {
+        max-width: 420px;
+        font-size: 24px;
+        margin: 10px auto;
+        line-height: 30px;
+    }
+
+    img {
+        width: 160px;
+        height: 404px;
+    }
+
+    .btn-wrapper-start-page {
+        width: 340px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    .container {
+        width: 375px;
+        height: 310px;
+    }
+
+    .instruction {
+        width: 275px;
+        height: 255px;
+        top: 51.5%
+    }
+
+    .offer {
+        font-size: 41px;
+    }
+
+    #minValue, #maxValue, #attempts {
+        width: 310px;
+        height: 37px;
+        margin: auto;
+    }
+
+    #userValue {
+        width: 300px;
+        height: 30px;
+        margin: auto;
+    }
+
+    .container-wrapper, .field-for-userValue {
+        width: 100%;
+    }
+
+    #btn-clear, #btn-start {
+        height: 37px;
+        width: 145px;
+    }
+
+    .btn-generate, .btn-exit {
+        height: 34px;
+        width: 150px;
+    }
+
+    .logo {
+        width: 150px;
+        font-size: 21px;
+    }
+
+    .game-block {
+        height: 420px;
+        width: 410px;
+    }
+
+    .buttons {
+        margin: 5px;
+    }
+
+    .game-page-window {
+        width: 340px;
+        height: 110px;
+    }
+
+    .greetings, .total-number-of-attempts {
+        width: 345px;
+        font-size: 19px;;
+        line-height: 30px;
+    }
+
+    .error {
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .instruction p {
+        line-height: 23px;
+        margin-top: 5px;
+    }
+
+    .out, .remaining-attempts {
+        max-width: 345px;
+        font-size: 19px;
+        margin: 10px auto;
+        line-height: 30px;
+    }
+
+    img {
+        width: 175px;
+        height: 367px;
+    }
+
+    .btn-wrapper-start-page {
+        width: 310px;
+        margin: auto;
+    }
+
+    .rules, #btn-change-subject, #lang {
+        width: 40px;
+        height: 24px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 540px) {
+
+    .instruction {
+        width: 220px;
+        height: 205px;
+        font-size: 11px;
+        line-height: 5px;
+    }
+
+    .logo {
+        width: 108px;
+        font-size: 14px;
+    }
+
+    .container {
+        min-width: 300px;
+        height: 260px;
+        width: 100%;
+    }
+
+    .offer {
+        font-size: 30px;
+    }
+
+    #minValue, #maxValue, #attempts {
+        width: 260px;
+        height: 30px;
+        margin: auto;
+    }
+
+    .start-page {
+        min-height: 300px;
+    }
+
+    .offer {
+        max-width: 300px;
+    }
+
+    img {
+        display: none;
+    }
+
+    input::placeholder {
+        font-size: 11px;
+    }
+
+    .input {
+        font-size: 9px;
+    }
+
+    .btn-wrapper-start-page {
+        width: 266px;
+        justify-content: space-between;
+    }
+
+    #btn-clear, #btn-start {
+        height: 30px;
+        width: 122px;
+        font-size: 15px;
+    }
+
+    .btn-generate, .btn-exit {
+        height: 34px;
+        width: 125px;
+        margin: auto;
+    }
+
+    .rules, #btn-change-subject, #lang {
+        width: 40px;
+        height: 18px;
+        font-size: 13px;
+    }
+
+    .greetings, .total-number-of-attempts {
+        width: 297px;
+        font-size: 17px;;
+        line-height: 22px;
+    }
+
+    .game-page-window {
+        width: 288px;
+        height: 110px;
+    }
+
+    .game-block {
+        height: 363px;
+    }
+
+    #userValue {
+        width: 254px;
+        height: 28px;
+    }
+
+    .buttons {
+        height: 28px;
+    }
+
+    .error {
+        font-size: 16px;
+    }
+
+    .btn-generate, .btn-exit {
+        height: 28px;
+        width: 119px;
+    }
+
+    .out, .remaining-attempts {
+        font-size: 17px;
+        line-height: 22px;
+        max-width: 279px;
+    }
+}
+
+

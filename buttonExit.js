@@ -8,18 +8,18 @@ function buttonExit() {
     prevDistance = 0;
     userValueDistance = 0;
 
-    dom.generateBtn.disabled = false;
-    dom.inputMin.value = '';
-    dom.inputMax.value = '';
-    dom.inputAttempts.value = '';
-    dom.inputUser.value = "";
-    dom.divOut.textContent = "";
-    dom.remainingAttempts.textContent = "";
-    dom.sectionStartPage.style.display = 'flex';
-    dom.sectionGamePage.style.display = 'none';
-    for(let item of dom.divImg){
+    ElementsDom.generateBtn.disabled = false;
+    ElementsDom.inputMin.value = '';
+    ElementsDom.inputMax.value = '';
+    ElementsDom.inputAttempts.value = '';
+    ElementsDom.inputUser.value = "";
+    ElementsDom.divOut.textContent = "";
+    ElementsDom.remainingAttempts.textContent = "";
+    ElementsDom.sectionStartPage.style.display = 'flex';
+    ElementsDom.sectionGamePage.style.display = 'none';
+    for (let item of ElementsDom.divImg) {
         item.style.display = 'none';
     }
-    dom.totalNumbersOfAttempts.textcontent = "";
-    dom.divGreetings.textContent = "";
+    ElementsDom.totalNumbersOfAttempts.textcontent = "";
+    ElementsDom.divGreetings.textContent = "";
 }

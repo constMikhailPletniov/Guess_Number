@@ -1,11 +1,11 @@
 function buttonStart() {
-    minValue = Number(dom.inputMin.value);
-    maxValue = Number(dom.inputMax.value);
-    attempts = Number(dom.inputAttempts.value);
+    minValue = Number(ElementsDom.inputMin.value);
+    maxValue = Number(ElementsDom.inputMax.value);
+    attempts = Number(ElementsDom.inputAttempts.value);
     randomValue = random(minValue, maxValue);
 
-    dom.sectionStartPage.style.display = 'none';
-    dom.sectionGamePage.style.display = 'flex';
-    dom.divGreetings.textContent = `Hello, I thought of a number from ${minValue} to ${maxValue} Your range.`;
-    dom.totalNumbersOfAttempts.textContent = `Try to guess it for ${attempts} attempts!`;
+    ElementsDom.sectionStartPage.style.display = 'none';
+    ElementsDom.sectionGamePage.style.display = 'flex';
+    ElementsDom.divGreetings.textContent = `Hello, I thought of a number from ${minValue} to ${maxValue} Your range.`;
+    ElementsDom.totalNumbersOfAttempts.textContent = `Try to guess it for ${attempts} attempts!`;
 }

@@ -9,23 +9,23 @@ function validationInput() {
         console.log('true');
         console.log(this.value);
         //или (Number(this.value) ^ 0) === Number(this.value);
-        dom.startBtn.disabled = false;
-        dom.generateBtn.disabled = false;
+        ElementsDom.startBtn.disabled = false;
+        ElementsDom.generateBtn.disabled = false;
         return clearWarningText();
 
     } else {
         console.log('false');
         console.log(this.value);
-        console.log(dom.blocksTextError);
-        dom.startBtn.disabled = true;
-        dom.generateBtn.disabled = true;
+        console.log(ElementsDom.blocksTextError);
+        ElementsDom.startBtn.disabled = true;
+        ElementsDom.generateBtn.disabled = true;
         return inputWarningText();
     }
 }
 
 function validationStart() {
-    if (Number(dom.inputMin.value) < Number(dom.inputMax.value)) {
-        dom.startBtn.disabled = false;
+    if (Number(ElementsDom.inputMin.value) < Number(ElementsDom.inputMax.value)) {
+        ElementsDom.startBtn.disabled = false;
         return buttonStart();
     } else {
         return inputWarningText();
@@ -33,7 +33,7 @@ function validationStart() {
 }
 
 function inputWarningText() {
-    for (el of dom.blocksTextError) {
+    for (el of ElementsDom.blocksTextError) {
 
         el.textContent = 'Please, enter correct values!';
         el.style.color = '#f00';
@@ -41,7 +41,7 @@ function inputWarningText() {
 }
 
 function clearWarningText() {
-    for (el of dom.blocksTextError) {
+    for (el of ElementsDom.blocksTextError) {
         el.textContent = '';
     }
 }

@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Guess Number</title>
     <link rel="stylesheet" href="style.css" id="theme">
@@ -19,7 +20,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 </head>
@@ -38,6 +38,10 @@
 
     <div class="wrapper-lang">
         <button id="lang" title="This button will change the language of the game">ru</button>
+        <select id="lang">
+            <option value="en">en</option>
+            <option value="ru">ru</option>
+        </select>
     </div>
 
 </header>
@@ -50,13 +54,17 @@
                 <p class="offer">Let's play a game!</p>
             </div>
 
-            <div class="instruction">
-                <p>To start playing, enter in the first field your minimum value from 1 to 199. In the second field,
-                    enter a value from 2 to 200. In the third field, enter the number of attempts from 1 to 15 and click
-                    Start.</p>
-                <p>Enter in the input field your value from minimum to maximum value and press the Generate button. If
-                    you want to end the game, click the exit button.</p>
-            </div>
+                <div class="instruction">
+                    <p class="paragraph_instruction_one">To start playing, enter in the first field your minimum value
+                        from 1 to 199. In the second field,
+                        enter a value from 2 to 200. In the third field, enter the number of attempts from 1 to 15 and
+                        click
+                        Start.</p>
+                    <p class="paragraph_instruction_two">Enter in the input field your value from minimum to maximum
+                        value and press the Generate button.
+                        If
+                        you want to end the game, click the exit button.</p>
+                </div>
 
             <div class="container">
                 <div class="container-wrapper">
@@ -67,11 +75,11 @@
                                    title="This field is for entering the minimum number">
                         </div>
 
-                        <div class="max_num" for="maxValue">
-                            <input type="number" name="maxValue" class="input" id="maxValue"
-                                   placeholder="Enter the maximum number between 2 and 200"
-                                   title="This field is for entering the maximum number">
-                        </div>
+                    <div class="max_num" for="maxValue">
+                        <input type="number" name="maxValue" class="input" id="maxValue"
+                               placeholder="Enter the maximum number between 2 and 200"
+                               title="This field is for entering the maximum number">
+                    </div>
 
                         <div class="attempts_num" for="attempts">
                             <input type="number" name="attempts" class="input" id="attempts"
@@ -157,15 +165,15 @@
 
 <footer></footer>
 
-<script src="./domObject.js"></script>
-<script src="./btnStart.js"></script>
-<script src="./buttonGenerate.js"></script>
-<script src="./buttonExit.js"></script>
-<script src="changeSubject.js"></script>
-<script src="./random.js"></script>
-<script src="./validation.js"></script>
-<script src="./question.js"></script>
-<script src="./app.js"></script>
+    <script src="./helpers/reset.js"></script>
+    <script src="./script/domObject.js"></script>
+    <script src="./helpers/language.js"></script>
+    <script src="./script/btnStart_Exit.js"></script>
+    <script src="./script/buttonGenerate.js"></script>
+    <script src="./script/random.js"></script>
+    <script src="./script/validation.js"></script>
+    <script src="./script/changeLanguage.js"></script>
+    <script src="./script/app.js"></script>
 
 </body>
 </html>

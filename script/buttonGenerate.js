@@ -1,4 +1,5 @@
 function buttonGenerate() {
+
     userValue = Number(ElementsDom.inputUser.value);
     count++;
     --attempts;

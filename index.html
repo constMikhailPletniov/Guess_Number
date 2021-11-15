@@ -27,12 +27,24 @@
 <body>
 <header>
     <h1 class="logo">Guess Game</h1>
-    <button id="btn-change-subject"></button>
+
+    <div class="rules-wrapper">
+        <button class="rules">rules</button>
+        <!--       <img class="question" alt="question" src="img/questionmark_83826.svg">-->
+    </div>
+
+    <div class="wrapper-btn-change">
+        <button id="btn-change-subject"></button>
+    </div>
+
+    <div class="wrapper-lang">
+        <button id="lang">ru</button>
+    </div>
+
 </header>
 
 <div class="start-page">
     <div class="wrapper-start-page">
-
 
         <div class="instruction-wrapper">
             <div class="offer-wrapper">
@@ -71,18 +83,14 @@
                     <div class="error"></div>
 
                     <div class="btn-wrapper-start-page">
-                        <div class="button-start-wrapper">
-                            <button id="btn-start" title="This button starts the game">START</button>
-                        </div>
-
                         <div class="button-clear-wrapper">
                             <button id="btn-clear" title="This button clears the input fields">CLEAR</button>
                         </div>
-                    </div>
 
-                </div>
-                <div class="img-question">
-                    <img class="question" alt="question" src="img/questionmark_83826.svg">
+                        <div class="button-start-wrapper">
+                            <button id="btn-start" title="This button starts the game">START</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -137,7 +145,6 @@
     </div>
 </div>
 
-
 <footer></footer>
 
 <script src="./domObject.js"></script>
@@ -151,5 +158,4 @@
 <script src="./app.js"></script>
 
 </body>
-
 </html>

@@ -4,9 +4,8 @@ swichMode.onclick = function (){
     const theme = document.getElementById('theme');
 
     if (theme.getAttribute('href') === 'style.css'){
-        theme.href = 'yellow-mode.css'
+        theme.href = 'yellow-mode.css';
     }else {
-        theme.href = 'style.css'
-
+        theme.href = 'style.css';
     }
 }

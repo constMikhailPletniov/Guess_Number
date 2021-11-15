@@ -25,7 +25,7 @@ header {
 }
 
 h1 {
-    margin: auto 20px;
+    margin: auto 30px;
 }
 
 .start-page {
@@ -42,7 +42,6 @@ h1 {
 
 .wrapper-start-page {
     margin: auto;
-
 }
 
 section {
@@ -161,9 +160,8 @@ label {
     padding-top: 20px;
 }
 
-.button-clear-wrapper{
+.button-clear-wrapper {
     padding-top: 20px;
-
 }
 
 #btn-start:hover {
@@ -181,17 +179,31 @@ label {
     width: 100%;
 }
 
-.img-question {
-    position: absolute;
-    left: 393px;
-    top: 300px;
+.rules-wrapper {
+    /*position: absolute;*/
+    /*left: 393px;*/
+    /*top: 300px;*/
+    margin: 10px;
 }
 
-.question {
-    width: 30px;
-    height: 25px;
-    cursor: pointer
+.rules {
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 30px;
+    border: solid 1px gray;
+    background: #ffc6ff;
+    border-radius: 40px;
 }
+
+/*.question {*/
+/*    width: 30px;*/
+/*    height: 25px;*/
+/*    cursor: pointer*/
+/*}*/
 
 .instruction {
     display: none;
@@ -211,6 +223,24 @@ label {
     text-align: justify;
     line-height: 25px;
     font-family: sans-serif;
+}
+
+.wrapper-lang {
+    /*cursor: pointer;*/
+    margin: 10px;
+}
+
+#lang {
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 30px;
+    border: solid 1px gray;
+    background: #ffc6ff;
+    border-radius: 40px;
 }
 
 .game-page {
@@ -305,7 +335,6 @@ h2 {
     height: 50px;
     border-radius: 15px;
     border: 1px solid #FFA8B7;
-    /*margin: 30px 35px 30px;*/
     font-size: 20px;
     text-align: center;
 }
@@ -371,6 +400,21 @@ h2 {
     box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.18) inset;
 }
 
+#btn-change-subject {
+    background: #ffdd32;
+    width: 50px;
+    height: 30px;
+    border: solid 1px gray;
+    border-radius: 40px;
+    cursor: pointer
+}
+
+.wrapper-btn-change {
+    width: 50px;
+    margin: auto 20px;
+    cursor: pointer
+}
+
 .error {
     height: 20px;
     padding-top: 20px;
@@ -410,7 +454,7 @@ h2 {
     margin: 20px 46px;
 }
 
-.btn-wrapper-start-page{
+.btn-wrapper-start-page {
     display: flex;
     justify-content: space-between;
 }
@@ -431,7 +475,7 @@ h2 {
     font-weight: bold;
 }
 
-#btn-clear{
+#btn-clear {
     width: 160px;
     height: 48px;
     border-color: #EB676F;

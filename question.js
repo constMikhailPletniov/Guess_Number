@@ -1,7 +1,3 @@
-
-
-
-
 dom.questionIcon.addEventListener('mouseover', () => {
     dom.instruction.style.display = 'block'
     dom.windowElement.style.opacity = '0.3'

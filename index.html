@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Guess Number</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" id="theme">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -27,58 +27,70 @@
 <body>
 <header>
     <h1 class="logo">Guess Game</h1>
+
+    <div class="rules-wrapper">
+        <button class="rules">rules</button>
+        <!--       <img class="question" alt="question" src="img/questionmark_83826.svg">-->
+    </div>
+
+    <div class="wrapper-btn-change">
+        <button id="btn-change-subject"></button>
+    </div>
+
+    <div class="wrapper-lang">
+        <button id="lang">ru</button>
+    </div>
+
 </header>
 
 <div class="start-page">
     <div class="wrapper-start-page">
 
-        <div class="offer-wrapper">
-            <p class="offer">Let's play a game!</p>
-        </div>
-
         <div class="instruction-wrapper">
-
-            <div class="instruction">
-                <p>Welcome to our wonderful application, to start playing, I ask you to enter in the first field your
-                    minimum value from 1 to 199. In the second field from the bottom, enter a value from 2 to 200. In
-                    the third field, enter the number of attempts from 1 to 15, and click the button Start. After Two
-                    buttons and an input field appear. Enter in the input field your value from the maximum to the
-                    minimum value that you have selected and press the generate button. If you want to end the game,
-                    click the exit button.</p>
+            <div class="offer-wrapper">
+                <p class="offer">Let's play a game!</p>
             </div>
 
-            <div class="window">
-                <form>
+            <div class="instruction">
+                <p>To start playing, enter in the first field your minimum value from 1 to 199. In the second field,
+                    enter a value from 2 to 200. In the third field, enter the number of attempts from 1 to 15 and click
+                    Start.</p>
+                <p>Enter in the input field your value from minimum to maximum value and press the Generate button. If
+                    you want to end the game, click the exit button.</p>
+            </div>
+
+            <div class="container">
+                <div class="container-wrapper">
+
                     <div class="min_num" for="minValue">
-                        <label> <input type="number" name="minValue" class="input" id="minValue"
-                                       placeholder="Enter the minimum number between 1 and 199"
-                                       title="This field is for entering the minimum number">
-                        </label>
+                        <input type="number" name="minValue" class="input" id="minValue"
+                               placeholder="Enter the minimum number between 1 and 199"
+                               title="This field is for entering the minimum number">
                     </div>
 
                     <div class="max_num" for="maxValue">
-                        <label>
-                            <input type="number" name="maxValue" class="input" id="maxValue"
-                                   placeholder="Enter the maximum number between 2 and 200"
-                                   title="This field is for entering the maximum number">
-                        </label>
+                        <input type="number" name="maxValue" class="input" id="maxValue"
+                               placeholder="Enter the maximum number between 2 and 200"
+                               title="This field is for entering the maximum number">
                     </div>
-                </form>
 
-                <label class="attempts_num" for="attempts">
-                    <input type="number" name="attempts" class="input" id="attempts"
-                           placeholder="Enter the number of attempts"
-                           title="This field is for entering the number of attempts">
-                </label>
+                    <div class="attempts_num" for="attempts">
+                        <input type="number" name="attempts" class="input" id="attempts"
+                               placeholder="Enter the number of attempts"
+                               title="This field is for entering the number of attempts">
+                    </div>
 
-                <div class="button-start-wrapper">
-                    <button id="btn-start" title="This button starts the game">START</button>
-                </div>
+                    <div class="error"></div>
 
-                <div class="error"></div>
+                    <div class="btn-wrapper-start-page">
+                        <div class="button-clear-wrapper">
+                            <button id="btn-clear" title="This button clears the input fields">CLEAR</button>
+                        </div>
 
-                <div class="img-question">
-                    <img class="question" alt="question" src="img/questionmark_83826.svg">
+                        <div class="button-start-wrapper">
+                            <button id="btn-start" title="This button starts the game">START</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -100,12 +112,18 @@
                     </div>
 
                     <div class="game-page-window">
-                        <label class="field-for-userValue">
+                        <div class="field-for-userValue">
                             <input class="input" id="userValue" placeholder="Enter your number"
                                    title="Enter your number" type="number" min="1" max="200">
-                        </label>
+                        </div>
+
+                        <div class="error"></div>
 
                         <div class="buttons">
+
+                            <div class="buttons-exit-wrapper">
+                                <button class="btn-exit" title="This button will end the game">EXIT</button>
+                            </div>
                             <div class="buttons-generate-wrapper">
                                 <button
                                         class="btn-generate"
@@ -113,17 +131,10 @@
                                     GENERATE
                                 </button>
                             </div>
-
-                            <div class="buttons-exit-wrapper">
-                                <button class="btn-exit" title="This button will end the game">EXIT</button>
-                            </div>
                         </div>
-
-                        <div class="error"></div>
-
-                        <div class="out"></div>
-                        <div class="remaining-attempts"></div>
                     </div>
+                    <div class="out"></div>
+                    <div class="remaining-attempts"></div>
                 </div>
 
                 <div class="img">
@@ -134,18 +145,17 @@
     </div>
 </div>
 
-
 <footer></footer>
 
 <script src="./domObject.js"></script>
 <script src="./btnStart.js"></script>
 <script src="./buttonGenerate.js"></script>
 <script src="./buttonExit.js"></script>
+<script src="changeSubject.js"></script>
 <script src="./random.js"></script>
 <script src="./validation.js"></script>
 <script src="./question.js"></script>
 <script src="./app.js"></script>
 
 </body>
-
 </html>

@@ -14,7 +14,7 @@ const dom = {
     remainingAttempts: document.querySelector('.remaining-attempts'),
     exitBtn: document.querySelector('.btn-exit'),
     blocksTextError:document.querySelectorAll('.error'),
-    questionIcon:document.querySelector('.question'),
+    questionIcon:document.querySelector('.rules-wrapper'),
     instruction:document.querySelector('.instruction'),
-    windowElement:document.querySelector('.window')
+    windowElement:document.querySelector('.container')
 };

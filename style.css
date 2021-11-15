@@ -3,27 +3,36 @@ body {
     height: 100%;
     background: white;
     margin: 0;
+    transition: 1s;
 }
 
 header {
     height: 7vh;
     display: flex;
+    background: #e7c6ff;
 }
 
 .logo {
     font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 23px;
     line-height: 29px;
+    letter-spacing: 0.05em;
+    color: white;
+    font-style: normal;
+    text-shadow: 4px 3px 0 rgba(0, 0, 0, 0.08),
+    5px 4px 0 rgba(0, 0, 0, 0.11);
 }
 
 h1 {
-    margin: auto 20px;
+    margin: auto 30px;
 }
 
 .start-page {
     width: 100%;
     height: 86vh;
     min-height: 460px;
-    background: #FFA8B7;
+    background: #c77dff;
     justify-content: center;
     align-items: center;
     margin: 0 auto;
@@ -33,7 +42,6 @@ h1 {
 
 .wrapper-start-page {
     margin: auto;
-
 }
 
 section {
@@ -54,11 +62,7 @@ section {
     margin: auto;
 }
 
-.offer-wrapper {
-    padding: 30px 0;
-}
-
-.window {
+.container {
     display: flow-root;
     flex-wrap: wrap;
     flex-direction: column;
@@ -69,15 +73,22 @@ section {
     background: #FFFFFF;
     border-radius: 15px;
     text-align: center;
-    margin: auto;
+    margin: 35px auto;
     transition: all .5s ease-out;
     box-shadow: 1px 1px 1px rgb(0 0 0 / 20%),
     2px 2px 2px rgb(0 0 0 / 20%);
+    position: relative;
+}
+
+.container-wrapper {
+    width: 342px;
+    display: inline-block;
+    padding-top: 15px;
 }
 
 input::placeholder {
     font-family: 'Istok Web', sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     color: #696969;
 }
@@ -94,6 +105,12 @@ input::placeholder {
 
 input {
     display: block;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+button {
+    cursor: pointer
 }
 
 label {
@@ -101,75 +118,50 @@ label {
 }
 
 #minValue {
-    width: 280px;
+    width: 335px;
     height: 42px;
     border-radius: 15px;
     border: 1px solid #FFA8B7;
-    font-size: 12px;
+    font-size: 20px;
     text-align: center;
 }
 
 .min_num {
-    width: 209px;
-    height: 42px;
-    margin-left: 18.5%;
-    margin-top: 5%;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    color: #000000;
-    text-align: center;
-}
-
-#maxValue {
-    width: 280px;
-    height: 42px;
-    border-radius: 15px;
-    border: 1px solid #FFA8B7;
-    font-size: 12px;
-    text-align: center;
+    margin-top: 25px;
 }
 
 .max_num {
-    width: 209px;
-    height: 42px;
-    margin-left: 18.5%;
-    margin-top: 6%;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    color: #000000;
-}
-
-#attempts {
-    width: 280px;
-    height: 42px;
-    border-radius: 15px;
-    border: 1px solid #FFA8B7;
-    font-size: 12px;
-    text-align: center;
+    margin-top: 25px;
 }
 
 .attempts_num {
-    width: 213px;
-    height: 42px;
-    margin-left: 18.5%;
-    margin-top: 6%;
-    font-family: 'Montserrat', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 17px;
-    color: #000000;
+    margin-top: 25px;
 }
 
+#maxValue {
+    width: 335px;
+    height: 42px;
+    border-radius: 15px;
+    border: 1px solid #FFA8B7;
+    font-size: 20px;
+    text-align: center;
+}
 
-.button-start-wrapper{
-    padding-top: 40px;
+#attempts {
+    width: 335px;
+    height: 42px;
+    border-radius: 15px;
+    border: 1px solid #FFA8B7;
+    font-size: 20px;
+    text-align: center;
+}
+
+.button-start-wrapper {
+    padding-top: 20px;
+}
+
+.button-clear-wrapper {
+    padding-top: 20px;
 }
 
 #btn-start:hover {
@@ -184,26 +176,41 @@ label {
 }
 
 .instruction-wrapper {
-    display: flex;
     width: 100%;
 }
 
-.img-question {
-    margin-top: 4%;
+.rules-wrapper {
+    /*position: absolute;*/
+    /*left: 393px;*/
+    /*top: 300px;*/
+    margin: 10px;
 }
 
-.question {
-    width: 35px;
-    height: 15px;
-    margin-left: 91.5%;
+.rules {
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 30px;
+    border: solid 1px gray;
+    background: #ffc6ff;
+    border-radius: 40px;
 }
+
+/*.question {*/
+/*    width: 30px;*/
+/*    height: 25px;*/
+/*    cursor: pointer*/
+/*}*/
 
 .instruction {
     display: none;
     width: 320px;
     background: #ffffff;
     position: absolute;
-    top: 42%;
+    top: 41%;
     left: 50%;
     transform: translate(-50%, -20%);
     box-shadow: 0 5px 10px 2px rgb(34 60 80 / 20%);
@@ -218,14 +225,27 @@ label {
     font-family: sans-serif;
 }
 
+.wrapper-lang {
+    /*cursor: pointer;*/
+    margin: 10px;
+}
+
+#lang {
+    text-align: center;
+    cursor: pointer;
+    color: #FFFFFF;
+    font-size: 16px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 30px;
+    border: solid 1px gray;
+    background: #ffc6ff;
+    border-radius: 40px;
+}
+
 .game-page {
     display: none;
     flex-direction: column;
-}
-
-header {
-    height: 7vh;
-    background: #FFFFFF;
 }
 
 .fireworks-and-game-block {
@@ -235,7 +255,7 @@ header {
 
 .game-page-block {
     height: 86vh;
-    background: #FFA8B7;
+    background: #c77dff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -251,12 +271,12 @@ header {
 
 .game-page-window {
     width: 440px;
-    height: 290px;
+    height: 170px;
     background: #FFFFFF;
     border-radius: 15px;
     text-align: center;
-    margin: 20px auto 0;
-    padding: 15px;
+    margin: 18px auto 0;
+    padding: 22px 0;
     box-shadow: 1px 1px 1px rgb(0 0 0 / 20%),
     2px 2px 2px rgb(0 0 0 / 20%);
 }
@@ -269,23 +289,14 @@ header {
 }
 
 img {
-    width: 237px;
-    height: 442px;
+    width: 270px;
+    height: 505px;
 }
 
 h2 {
     color: #FFFFFF;
     margin: 0;
     padding-top: 10px;
-}
-
-.logo {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    font-size: 16px;
-    line-height: 29px;
-    letter-spacing: 0.05em;
-    color: #000000;
 }
 
 .greetings {
@@ -304,16 +315,18 @@ h2 {
 .total-number-of-attempts {
     font-family: 'Montserrat', sans-serif;
     font-weight: 800;
-    font-size: 30px;
+    font-size: 28px;
     width: 490px;
     margin: 0 auto;
     line-height: 41px;
     text-align: center;
+    text-shadow: 4px 3px 0 rgba(0, 0, 0, 0.08),
+    3px 2px 0 rgba(0, 0, 0, 0.11);
     word-wrap: break-word;
 }
 
 .field-for-userValue {
-    margin-left: 5%;
+    margin: auto;
     width: 326px;
 }
 
@@ -322,7 +335,6 @@ h2 {
     height: 50px;
     border-radius: 15px;
     border: 1px solid #FFA8B7;
-    margin: 30px 35px 30px;
     font-size: 20px;
     text-align: center;
 }
@@ -330,7 +342,7 @@ h2 {
 .buttons {
     display: flex;
     justify-content: space-around;
-    margin: 20px 46px;
+    margin: 10px 46px;
 }
 
 .btn-generate {
@@ -343,7 +355,7 @@ h2 {
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: bold;
-    box-shadow: 1.8px 1.8px 0 0 rgba(0,0,0,0.15);
+    box-shadow: 1.8px 1.8px 0 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-generate:hover {
@@ -351,7 +363,6 @@ h2 {
     color: #36DB5A;
     box-shadow: 0 0 2px 0 #36DB5A inset,
     0 0 3px 1px #36DB5A;
-
 }
 
 .btn-generate:active {
@@ -361,22 +372,22 @@ h2 {
 .btn-generate:disabled {
     background: #EDEBEB;
 }
-#btn-start:disabled{
+
+#btn-start:disabled {
     background: #EDEBEB;
 }
 
 .btn-exit {
     width: 150px;
     height: 62px;
-    border: 1px solid;
-    border-color: #EB676F;
+    border: 1px solid #EB676F;
     background-color: white;
     border-radius: 40px;
     color: #EB676F;
     font-family: Montserrat, sans-serif;
     font-size: 16px;
     font-weight: bold;
-    box-shadow: 1.8px 1.8px 0 0 rgba(0,0,0,0.15);
+    box-shadow: 1.8px 1.8px 0 0 rgba(0, 0, 0, 0.15);
 }
 
 .btn-exit:hover {
@@ -389,25 +400,52 @@ h2 {
     box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.18) inset;
 }
 
-.error{
+#btn-change-subject {
+    background: #ffdd32;
+    width: 50px;
+    height: 30px;
+    border: solid 1px gray;
+    border-radius: 40px;
+    cursor: pointer
+}
+
+.wrapper-btn-change {
+    width: 50px;
+    margin: auto 20px;
+    cursor: pointer
+}
+
+.error {
     height: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
+    font-size: 20px;
 }
 
 .out {
-    font-size: 22px;
+    font-size: 24px;
     font-family: sans-serif;
-    width: 95%;
-    max-width: 335px;
+    max-width: 425px;
     margin: 10px auto;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 4px 3px 0 rgba(0, 0, 0, 0.08),
+    3px 2px 0 rgba(0, 0, 0, 0.11);
+    word-wrap: break-word;
 }
 
 .remaining-attempts {
-    font-size: 22px;
+    font-size: 24px;
     font-family: sans-serif;
     width: 95%;
     max-width: 335px;
     margin: 10px auto;
+    color: white;
+    font-weight: 800;
+    text-align: center;
+    text-shadow: 4px 3px 0 rgba(0, 0, 0, 0.08),
+    3px 2px 0 rgba(0, 0, 0, 0.11);
+    word-wrap: break-word;
 }
 
 .button {
@@ -416,10 +454,15 @@ h2 {
     margin: 20px 46px;
 }
 
+.btn-wrapper-start-page {
+    display: flex;
+    justify-content: space-between;
+}
+
 #btn-start {
-    width: 209px;
-    height: 62px;
-    background: -webkit-linear-gradient(140.16deg, #4F5FE2 46.88%, #FFFFFF 112.25%);
+    width: 160px;
+    height: 48px;
+    background: #8187dc;
     box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
     -23px 0 20px -23px rgba(0, 0, 0, .6),
     23px 0 20px -23px rgba(0, 0, 0, .6),
@@ -432,8 +475,33 @@ h2 {
     font-weight: bold;
 }
 
+#btn-clear {
+    width: 160px;
+    height: 48px;
+    border-color: #EB676F;
+    background-color: white;
+    border-radius: 40px;
+    color: #EB676F;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .3),
+    -23px 0 20px -23px rgba(0, 0, 0, .6),
+    23px 0 20px -23px rgba(0, 0, 0, .6),
+    inset 0 0 40px rgba(0, 0, 0, .1);
+    font-family: Montserrat, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
 
+#btn-clear:hover {
+    background: #EB676F;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 3px #EB676F;
+}
+
+#btn-clear:active {
+    box-shadow: 0 0.5px 0 rgba(0, 0, 0, 0.18) inset;
+}
 
 footer {
     height: 7vh;
+    background: #e7c6ff;
 }

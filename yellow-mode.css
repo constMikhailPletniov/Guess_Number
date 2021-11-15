@@ -1,0 +1,71 @@
+header {
+    height: 7vh;
+    display: flex;
+    background: #ffee99;
+}
+
+.start-page {
+    width: 100%;
+    height: 86vh;
+    min-height: 460px;
+    background: #ffd400;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.game-page-block {
+    height: 86vh;
+    background: #ffdd32;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer {
+    height: 7vh;
+    background: #ffee99;
+}
+
+#minValue {
+    width: 335px;
+    height: 42px;
+    border-radius: 15px;
+    border: 1px solid #fe7f2d;
+    font-size: 20px;
+    text-align: center;
+}
+
+#maxValue {
+    width: 335px;
+    height: 42px;
+    border-radius: 15px;
+    border: 1px solid #fe7f2d;
+    font-size: 20px;
+    text-align: center;
+}
+
+#attempts {
+    width: 335px;
+    height: 42px;
+    border-radius: 15px;
+    border: 1px solid #fe7f2d;
+    font-size: 20px;
+    text-align: center;
+}
+
+#btn-start:hover {
+    background: rgba(0, 0, 0, 0);
+    color: #fe7f2d;
+    box-shadow: 0 0 2px 0 #fe7f2d inset,
+    0 0 3px 1px #fe7f2d;
+}
+
+#btn-change-subject{
+    background: #c77dff;
+    width: 50px;
+    height: 30px;
+    border-radius: 40px;
+}

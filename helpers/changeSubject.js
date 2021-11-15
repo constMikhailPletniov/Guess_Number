@@ -1,7 +1,6 @@
 
 
-ElementsDom.swichMode.onclick = function () {
-
+ElementsDom.switchMode.onclick = function () {
 
     if (ElementsDom.theme.getAttribute('href') === 'style.css') {
         ElementsDom.theme.href = 'yellow-mode.css';

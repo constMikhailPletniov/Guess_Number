@@ -38,7 +38,10 @@
         </div>
 
         <div class="wrapper-lang">
-            <button id="lang">ru</button>
+            <select id="lang">
+                <option value="en">en</option>
+                <option value="ru">ru</option>
+            </select>
         </div>
 
     </header>
@@ -52,11 +55,13 @@
                 </div>
 
                 <div class="instruction">
-                    <p>To start playing, enter in the first field your minimum value from 1 to 199. In the second field,
+                    <p class="paragraph_instruction_one">To start playing, enter in the first field your minimum value
+                        from 1 to 199. In the second field,
                         enter a value from 2 to 200. In the third field, enter the number of attempts from 1 to 15 and
                         click
                         Start.</p>
-                    <p>Enter in the input field your value from minimum to maximum value and press the Generate button.
+                    <p class="paragraph_instruction_two">Enter in the input field your value from minimum to maximum
+                        value and press the Generate button.
                         If
                         you want to end the game, click the exit button.</p>
                 </div>
@@ -148,15 +153,17 @@
 
     <footer></footer>
 
-    <script src="./domObject.js"></script>
-    <script src="./btnStart.js"></script>
-    <script src="./buttonGenerate.js"></script>
-    <script src="./buttonExit.js"></script>
-    <script src="../helpers/changeSubject.js"></script>
-    <script src="./random.js"></script>
-    <script src="./validation.js"></script>
-    <script src="./question.js"></script>
-    <script src="./app.js"></script>
+    <script src="./script/domObject.js"></script>
+    <script src="./helpers/language.js"></script>
+    <script src="./script/btnStart.js"></script>
+    <script src="./script/buttonGenerate.js"></script>
+    <script src="./script/buttonExit.js"></script>
+    <script src="./helpers/changeSubject.js"></script>
+    <script src="./script/random.js"></script>
+    <script src="./script/validation.js"></script>
+    <script src="./script/question.js"></script>
+    <script src="./script/changeLanguage.js"></script>
+    <script src="./script/app.js"></script>
 
 </body>
 

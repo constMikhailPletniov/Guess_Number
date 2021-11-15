@@ -1,161 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Guess Number</title>
-    <link rel="stylesheet" href="style.css" id="theme">
+    <link rel="stylesheet" href="style.css" id="theme" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;800&display=swap" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;900&display=swap" rel="stylesheet" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Istok+Web&display=swap" rel="stylesheet" />
+  </head>
 
+  <body>
+    <header>
+      <h1 class="logo">Guess Game</h1>
 
-</head>
-
-<body>
-<header>
-    <h1 class="logo">Guess Game</h1>
-
-    <div class="rules-wrapper">
+      <div class="rules-wrapper">
         <button class="rules">rules</button>
         <!--       <img class="question" alt="question" src="img/questionmark_83826.svg">-->
-    </div>
+      </div>
 
-    <div class="wrapper-btn-change">
+      <div class="wrapper-btn-change">
         <button id="btn-change-subject"></button>
-    </div>
+      </div>
 
-    <div class="wrapper-lang">
+      <div class="wrapper-lang">
         <button id="lang">ru</button>
-    </div>
+      </div>
+    </header>
 
-</header>
-
-<div class="start-page">
-    <div class="wrapper-start-page">
-
+    <div class="start-page">
+      <div class="wrapper-start-page">
         <div class="instruction-wrapper">
-            <div class="offer-wrapper">
-                <p class="offer">Let's play a game!</p>
-            </div>
+          <div class="offer-wrapper">
+            <p class="offer">Let's play a game!</p>
+          </div>
 
-            <div class="instruction">
-                <p>To start playing, enter in the first field your minimum value from 1 to 199. In the second field,
-                    enter a value from 2 to 200. In the third field, enter the number of attempts from 1 to 15 and click
-                    Start.</p>
-                <p>Enter in the input field your value from minimum to maximum value and press the Generate button. If
-                    you want to end the game, click the exit button.</p>
-            </div>
+          <div class="instruction">
+            <p>
+              To start playing, enter in the first field your minimum value from 1 to 199. In the second field, enter a value from 2 to 200. In the third field, enter the number of attempts from 1 to
+              15 and click Start.
+            </p>
+            <p>Enter in the input field your value from minimum to maximum value and press the Generate button. If you want to end the game, click the exit button.</p>
+          </div>
 
-            <div class="container">
-                <div class="container-wrapper">
+          <div class="container">
+            <div class="container-wrapper">
+              <div class="min_num" for="minValue">
+                <input
+                  type="number"
+                  name="minValue"
+                  class="input"
+                  id="minValue"
+                  placeholder="Enter the minimum number between 1 and 199"
+                  title="This field is for entering the minimum number"
+                  min="1"
+                  max="199"
+                  tabindex="1"
+                  autofocus
+                />
+              </div>
 
-                    <div class="min_num" for="minValue">
-                        <input type="number" name="minValue" class="input" id="minValue"
-                               placeholder="Enter the minimum number between 1 and 199"
-                               title="This field is for entering the minimum number">
-                    </div>
+              <div class="max_num" for="maxValue">
+                <input
+                  type="number"
+                  name="maxValue"
+                  class="input"
+                  id="maxValue"
+                  placeholder="Enter the maximum number between 2 and 200"
+                  title="This field is for entering the maximum number"
+                  min="2"
+                  max="200"
+                  tabindex="2"
+                />
+              </div>
 
-                    <div class="max_num" for="maxValue">
-                        <input type="number" name="maxValue" class="input" id="maxValue"
-                               placeholder="Enter the maximum number between 2 and 200"
-                               title="This field is for entering the maximum number">
-                    </div>
+              <div class="attempts_num" for="attempts">
+                <input
+                  type="number"
+                  name="attempts"
+                  class="input"
+                  id="attempts"
+                  placeholder="Enter the number of attempts"
+                  title="This field is for entering the number of attempts"
+                  tabindex="3"
+                  min="1"
+                  max="15"
+                />
+              </div>
 
-                    <div class="attempts_num" for="attempts">
-                        <input type="number" name="attempts" class="input" id="attempts"
-                               placeholder="Enter the number of attempts"
-                               title="This field is for entering the number of attempts">
-                    </div>
+              <div class="error"></div>
 
-                    <div class="error"></div>
-
-                    <div class="btn-wrapper-start-page">
-                        <div class="button-clear-wrapper">
-                            <button id="btn-clear" title="This button clears the input fields">CLEAR</button>
-                        </div>
-
-                        <div class="button-start-wrapper">
-                            <button id="btn-start" title="This button starts the game">START</button>
-                        </div>
-                    </div>
+              <div class="btn-wrapper-start-page">
+                <div class="button-clear-wrapper">
+                  <button id="btn-clear" title="This button clears the input fields">CLEAR</button>
                 </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="game-page">
-    <div class="mainWrapper">
+                <div class="button-start-wrapper">
+                  <button id="btn-start" title="This button starts the game">START</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="game-page">
+      <div class="mainWrapper">
         <div class="game-page-block">
-            <div class="fireworks-and-game-block">
-                <div class="img">
-                    <img alt="fireworks" src="./img/fireworks_PNG15695.png">
-                </div>
-
-                <div class="game-block">
-                    <div class="heading-wrapper">
-                        <h2 class="greetings"></h2>
-                        <h2 class="total-number-of-attempts"></h2>
-                    </div>
-
-                    <div class="game-page-window">
-                        <div class="field-for-userValue">
-                            <input class="input" id="userValue" placeholder="Enter your number"
-                                   title="Enter your number" type="number" min="1" max="200">
-                        </div>
-
-                        <div class="error"></div>
-
-                        <div class="buttons">
-
-                            <div class="buttons-exit-wrapper">
-                                <button class="btn-exit" title="This button will end the game">EXIT</button>
-                            </div>
-                            <div class="buttons-generate-wrapper">
-                                <button
-                                        class="btn-generate"
-                                        title="This button will check if the number you entered is correct">
-                                    GENERATE
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="out"></div>
-                    <div class="remaining-attempts"></div>
-                </div>
-
-                <div class="img">
-                    <img alt="fireworks" src="./img/fireworks_PNG15695.png">
-                </div>
+          <div class="fireworks-and-game-block">
+            <div class="img">
+              <img alt="fireworks" src="./img/fireworks_PNG15695.png" />
             </div>
+
+            <div class="game-block">
+              <div class="heading-wrapper">
+                <h2 class="greetings"></h2>
+                <h2 class="total-number-of-attempts"></h2>
+              </div>
+
+              <div class="game-page-window">
+                <div class="field-for-userValue">
+                  <input class="input" id="userValue" placeholder="Enter your number" title="Enter your number" type="number" min="1" max="200" />
+                </div>
+
+                <div class="error"></div>
+
+                <div class="buttons">
+                  <div class="buttons-exit-wrapper">
+                    <button class="btn-exit" title="This button will end the game">EXIT</button>
+                  </div>
+                  <div class="buttons-generate-wrapper">
+                    <button class="btn-generate" title="This button will check if the number you entered is correct">GENERATE</button>
+                  </div>
+                </div>
+              </div>
+              <div class="out"></div>
+              <div class="remaining-attempts"></div>
+            </div>
+
+            <div class="img">
+              <img alt="fireworks" src="./img/fireworks_PNG15695.png" />
+            </div>
+          </div>
         </div>
+      </div>
     </div>
-</div>
 
-<footer></footer>
+    <footer></footer>
 
-<script src="./domObject.js"></script>
-<script src="./btnStart.js"></script>
-<script src="./buttonGenerate.js"></script>
-<script src="./buttonExit.js"></script>
-<script src="changeSubject.js"></script>
-<script src="./random.js"></script>
-<script src="./validation.js"></script>
-<script src="./question.js"></script>
-<script src="./app.js"></script>
-
-</body>
+    <script src="./domObject.js"></script>
+    <script src="./btnStart.js"></script>
+    <script src="./buttonGenerate.js"></script>
+    <script src="./buttonExit.js"></script>
+    <script src="changeSubject.js"></script>
+    <script src="./random.js"></script>
+    <script src="./validation.js"></script>
+    <script src="./question.js"></script>
+    <script src="./crossingEnter.js"></script>
+    <script src="./app.js"></script>
+  </body>
 </html>

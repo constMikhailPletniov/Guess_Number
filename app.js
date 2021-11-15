@@ -8,10 +8,10 @@ let count = 0;
 let prevDistance = 0;
 let userValueDistance = 0;
 
-dom.startBtn.addEventListener('click', validationStart);
+dom.startBtn.addEventListener('click', validateStart);
 dom.generateBtn.addEventListener('click', buttonGenerate);
 dom.exitBtn.addEventListener('click', buttonExit);
-dom.inputMin.addEventListener('input', validationInput);
-dom.inputMax.addEventListener('input', validationInput);
-dom.inputAttempts.addEventListener('input', validationInput);
-dom.inputUser.addEventListener('input', validationInput);
+dom.inputMin.addEventListener('input', validateInput);
+dom.inputMax.addEventListener('input', validateInput);
+dom.inputAttempts.addEventListener('input', validateInput);
+dom.inputUser.addEventListener('input', validateInput);

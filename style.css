@@ -96,7 +96,7 @@ input::placeholder {
 }
 
 .input:hover {
-    box-shadow:  0 5px 30px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.1);
 }
 
 input {
@@ -173,7 +173,7 @@ label {
     display: none;
     width: 320px;
     background: #ffffff;
-    box-shadow:  0 5px 30px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 5px;
     z-index: 999;
@@ -210,6 +210,8 @@ label {
 .game-page {
     display: none;
     flex-direction: column;
+    transition: 1s;
+
 }
 
 .fireworks-and-game-block {
@@ -240,7 +242,7 @@ label {
     text-align: center;
     margin: 18px auto;
     padding: 22px 0;
-    box-shadow:  0 5px 30px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 5px 30px 0 rgba(0, 0, 0, 0.2);
 }
 
 .img {
@@ -311,7 +313,7 @@ h2 {
     width: 150px;
     height: 62px;
     border: none;
-    background: -webkit-linear-gradient(140.16deg, #1DCA43 39.86%, rgba(158, 232, 210, 0) 150%);
+    background:  #1DCA43;
     border-radius: 40px;
     color: white;
     font-family: Montserrat, sans-serif;
@@ -505,11 +507,6 @@ footer {
         width: 150px;
     }
 
-    .logo {
-        width: 150px;
-        font-size: 21px;
-    }
-
     .game-block {
         height: 420px;
         width: 410px;
@@ -601,11 +598,6 @@ footer {
         width: 150px;
     }
 
-    .logo {
-        width: 150px;
-        font-size: 21px;
-    }
-
     .game-block {
         height: 420px;
         width: 410px;
@@ -669,10 +661,6 @@ footer {
         line-height: 5px;
     }
 
-    .logo {
-        width: 108px;
-        font-size: 14px;
-    }
 
     .container {
         min-width: 300px;

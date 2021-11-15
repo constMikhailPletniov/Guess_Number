@@ -63,7 +63,7 @@ footer {
     0 0 3px 1px #fe7f2d;
 }
 
-#btn-change-subject{
+#btn-change-subject {
     background: #c77dff;
     width: 50px;
     height: 30px;
@@ -96,7 +96,6 @@ footer {
     /*.container-wrapper, .field-for-userValue {*/
     /*    width: 100%;*/
     /*}*/
-
     #btn-clear, #btn-start {
         height: 34px;
         width: 150px;

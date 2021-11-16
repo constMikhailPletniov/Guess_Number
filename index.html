@@ -25,41 +25,34 @@
 </head>
 
 <body>
-<header>
-    <h1 class="logo">Guess Game</h1>
+    <header>
+        <h1 class="logo">Guess Game</h1>
 
-<<<<<<< HEAD
         <div class="rules-wrapper">
-            <button class="rules">rules</button>
-
+            <button class="rules" title="This button will show the rules of the game.">rules</button>
         </div>
-=======
-    <div class="rules-wrapper">
-        <button class="rules" title="This button will show the rules of the game.">rules</button>
-    </div>
->>>>>>> 9515897ac224b645f21fb74c769e8d9c2eda75b9
 
-    <div class="wrapper-btn-change">
-        <button id="btn-change-subject" title="This button will change the screen theme."></button>
-    </div>
 
-    <div class="wrapper-lang">
-        <button id="lang" title="This button will change the language of the game">ru</button>
-        <select id="lang">
-            <option value="en">en</option>
-            <option value="ru">ru</option>
-        </select>
-    </div>
+        <div class="wrapper-btn-change">
+            <button id="btn-change-subject" title="This button will change the screen theme."></button>
+        </div>
 
-</header>
+        <div class="wrapper-lang">
+            <select id="lang">
+                <option value="en">en</option>
+                <option value="ru">ru</option>
+            </select>
+        </div>
 
-<div class="start-page">
-    <div class="wrapper-start-page">
+    </header>
 
-        <div class="instruction-wrapper">
-            <div class="offer-wrapper">
-                <p class="offer">Let's play a game!</p>
-            </div>
+    <div class="start-page">
+        <div class="wrapper-start-page">
+
+            <div class="instruction-wrapper">
+                <div class="offer-wrapper">
+                    <p class="offer">Let's play a game!</p>
+                </div>
 
                 <div class="instruction">
                     <p class="paragraph_instruction_one">To start playing, enter in the first field your minimum value
@@ -73,126 +66,109 @@
                         you want to end the game, click the exit button.</p>
                 </div>
 
-            <div class="container">
-                <div class="container-wrapper">
-                    <form class="form-Start-page">
-                        <div class="min_num" for="minValue">
-<<<<<<< HEAD
-                            <input type="number" name="minValue" class="input" id="minValue" autofocus tabindex="1"
-                                min="1" max="199" placeholder="Enter the minimum number between 1 and 199"
-                                title="This field is for entering the minimum number">
-                        </div>
+                <div class="container">
+                    <div class="container-wrapper">
+                        <form class="form-Start-page">
+                            <div class="min_num" for="minValue">
 
-                        <div class="max_num" for="maxValue">
-                            <input type="number" name="maxValue" class="input" id="maxValue" tabindex="2" min="2"
-                                max="200" placeholder="Enter the maximum number between 2 and 200"
-                                title="This field is for entering the maximum number">
-                        </div>
-
-                        <div class="attempts_num" for="attempts">
-                            <input type="number" name="attempts" class="input" id="attempts" tabindex="3" min="1"
-                                max="15" placeholder="Enter the number of attempts"
-                                title="This field is for entering the number of attempts">
-=======
-                            <input type="number" name="minValue" class="input" id="minValue"
-                                   placeholder="Enter the minimum number between 1 and 199"
-                                   title="This field is for entering the minimum number">
-                        </div>
-
-                    <div class="max_num" for="maxValue">
-                        <input type="number" name="maxValue" class="input" id="maxValue"
-                               placeholder="Enter the maximum number between 2 and 200"
-                               title="This field is for entering the maximum number">
-                    </div>
-
-                        <div class="attempts_num" for="attempts">
-                            <input type="number" name="attempts" class="input" id="attempts"
-                                   placeholder="Enter the number of attempts"
-                                   title="This field is for entering the number of attempts">
->>>>>>> 9515897ac224b645f21fb74c769e8d9c2eda75b9
-                        </div>
-                    </form>
-
-                    <div class="error"></div>
-
-                    <div class="btn-wrapper-start-page">
-                        <div class="button-clear-wrapper">
-                            <button id="btn-clear" title="This button clears the input fields">CLEAR</button>
-                        </div>
-
-                        <div class="button-start-wrapper">
-                            <button id="btn-start" title="This button starts the game">START</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="game-page">
-    <div class="mainWrapper">
-        <div class="game-page-block">
-
-            <div class="instruction">
-                <p>To start playing, enter in the first field your minimum value from 1 to 199. In the second field,
-                    enter a value from 2 to 200. In the third field, enter the number of attempts from 1 to 15 and click
-                    Start.</p>
-                <p>Enter in the input field your value from minimum to maximum value and press the Generate button. If
-                    you want to end the game, click the exit button.</p>
-            </div>
-            <div class="fireworks-and-game-block">
-                <div class="img">
-                    <img alt="fireworks" src="./img/fireworks_PNG15695.png">
-                </div>
-
-                <div class="game-block">
-                    <div class="heading-wrapper">
-                        <h2 class="greetings"></h2>
-                        <h2 class="total-number-of-attempts"></h2>
-                    </div>
-
-                    <div class="game-page-window">
-                        <form class="form-Game-page">
-                            <div class="field-for-userValue">
-                                <input class="input" id="userValue" placeholder="Enter your number"
-<<<<<<< HEAD
-                                    title="Enter your number" type="number" min="1" max="200" autofocus />
-=======
-                                       title="Enter your number" type="number" min="1" max="200">
->>>>>>> 9515897ac224b645f21fb74c769e8d9c2eda75b9
+                                <input type="number" name="minValue" class="input" id="minValue" autofocus tabindex="1"
+                                    min="1" max="199" placeholder="Enter the minimum number between 1 and 199"
+                                    title="This field is for entering the minimum number">
                             </div>
+
+                            <div class="max_num" for="maxValue">
+                                <input type="number" name="maxValue" class="input" id="maxValue" tabindex="2" min="2"
+                                    max="200" placeholder="Enter the maximum number between 2 and 200"
+                                    title="This field is for entering the maximum number">
+                            </div>
+
+                            <div class="attempts_num" for="attempts">
+                                <input type="number" name="attempts" class="input" id="attempts" tabindex="3" min="1"
+                                    max="15" placeholder="Enter the number of attempts"
+                                    title="This field is for entering the number of attempts" />
+                            </div>
+
+
                         </form>
 
                         <div class="error"></div>
 
-                        <div class="buttons">
-
-                            <div class="buttons-exit-wrapper">
-                                <button class="btn-exit" title="This button will end the game">EXIT</button>
+                        <div class="btn-wrapper-start-page">
+                            <div class="button-clear-wrapper">
+                                <button id="btn-clear" title="This button clears the input fields">CLEAR</button>
                             </div>
-                            <div class="buttons-generate-wrapper">
-                                <button
-                                        class="btn-generate"
-                                        title="This button will check if the number you entered is correct">
-                                    GENERATE
-                                </button>
+
+                            <div class="button-start-wrapper">
+                                <button id="btn-start" title="This button starts the game">START</button>
                             </div>
                         </div>
                     </div>
-                    <div class="out"></div>
-                    <div class="remaining-attempts"></div>
-                </div>
-
-                <div class="img">
-                    <img alt="fireworks" src="./img/fireworks_PNG15695.png">
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<footer></footer>
+    <div class="game-page">
+        <div class="mainWrapper">
+            <div class="game-page-block">
+
+                <div class="instruction">
+                    <p>To start playing, enter in the first field your minimum value from 1 to 199. In the second field,
+                        enter a value from 2 to 200. In the third field, enter the number of attempts from 1 to 15 and
+                        click
+                        Start.</p>
+                    <p>Enter in the input field your value from minimum to maximum value and press the Generate button.
+                        If
+                        you want to end the game, click the exit button.</p>
+                </div>
+                <div class="fireworks-and-game-block">
+                    <div class="img">
+                        <img alt="fireworks" src="./img/fireworks_PNG15695.png">
+                    </div>
+
+                    <div class="game-block">
+                        <div class="heading-wrapper">
+                            <h2 class="greetings"></h2>
+                            <h2 class="total-number-of-attempts"></h2>
+                        </div>
+
+                        <div class="game-page-window">
+                            <form class="form-Game-page">
+                                <div class="field-for-userValue">
+                                    <input class="input" id="userValue" placeholder="Enter your number"
+                                        title="Enter your number" type="number" min="1" max="200" autofocus />
+
+                                </div>
+                            </form>
+
+                            <div class="error"></div>
+
+                            <div class="buttons">
+
+                                <div class="buttons-exit-wrapper">
+                                    <button class="btn-exit" title="This button will end the game">EXIT</button>
+                                </div>
+                                <div class="buttons-generate-wrapper">
+                                    <button class="btn-generate"
+                                        title="This button will check if the number you entered is correct">
+                                        GENERATE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="out"></div>
+                        <div class="remaining-attempts"></div>
+                    </div>
+
+                    <div class="img">
+                        <img alt="fireworks" src="./img/fireworks_PNG15695.png">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer></footer>
 
     <script src="./helpers/reset.js"></script>
     <script src="./script/domObject.js"></script>
@@ -206,4 +182,5 @@
     <script src="./script/app.js"></script>
 
 </body>
+
 </html>

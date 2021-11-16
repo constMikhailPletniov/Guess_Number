@@ -313,7 +313,7 @@ h2 {
     width: 150px;
     height: 62px;
     border: none;
-    background:  #1DCA43;
+    background: #1DCA43;
     border-radius: 40px;
     color: white;
     font-family: Montserrat, sans-serif;
@@ -651,7 +651,8 @@ footer {
         font-size: 13px;
     }
 }
-html:lang(ru){
+
+html:lang(ru) {
     color: #36DB5A;
 }
 

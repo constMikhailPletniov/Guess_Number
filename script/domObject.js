@@ -26,7 +26,8 @@ const SelectorsCss = {
     classParagraphInstrationOne: '.paragraph_instruction_one',
     classParagraphInstrationTwo: '.paragraph_instruction_two',
     classOffer: '.offer',
-    classInput: '.input'
+    classInput: '.input',
+    classFormStartPage: '.form-Start-page'
 
 };
 
@@ -54,6 +55,7 @@ const ElementsDom = {
     btnClear: document.querySelector(SelectorsCss.idBtnClear),
     selectLang: document.querySelector(SelectorsCss.idLang),
     title: document.querySelector(SelectorsCss.title),
-    inputs: document.querySelectorAll(SelectorsCss.classInput)
+    inputs: document.querySelectorAll(SelectorsCss.classInput),
+    formStartPage: document.querySelector(SelectorsCss.classFormStartPage)
 };
 

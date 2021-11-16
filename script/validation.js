@@ -7,19 +7,19 @@ function validateInput() {
         clearWarningText();
 
     } else {
-        console.log(ElementsDom.blocksTextError);
         ElementsDom.startBtn.disabled = true;
         ElementsDom.generateBtn.disabled = true;
-        inputWarningText();
+        return inputWarningText();
     }
 }
 
 function validateStart() {
+
     if (Number(ElementsDom.inputMin.value) < Number(ElementsDom.inputMax.value)) {
         ElementsDom.startBtn.disabled = false;
-        buttonStart();
+        return buttonStart();
     } else {
-        inputWarningText();
+        return inputWarningText();
     }
 }
 
@@ -36,6 +36,7 @@ function inputWarningText() {
 
 function clearWarningText() {
     for (el of ElementsDom.blocksTextError) {
-        el.textContent = '';
+
+        return el.textContent = '';
     }
 }

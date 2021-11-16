@@ -26,6 +26,7 @@ const SelectorsCss = {
     classParagraphInstrationOne: '.paragraph_instruction_one',
     classParagraphInstrationTwo: '.paragraph_instruction_two',
     classOffer: '.offer',
+    classInput: '.input',
     html: 'html'
 };
 
@@ -53,6 +54,7 @@ const ElementsDom = {
     btnClear: document.querySelector(SelectorsCss.idBtnClear),
     selectLang: document.querySelector(SelectorsCss.idLang),
     title: document.querySelector(SelectorsCss.title),
-    html: document.querySelector(SelectorsCss.html)
+    html: document.querySelector(SelectorsCss.html),
+    inputs: document.querySelectorAll(SelectorsCss.classInput)
 };
 

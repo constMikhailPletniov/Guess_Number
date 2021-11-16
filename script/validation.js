@@ -1,42 +1,36 @@
-//let blocksTextError = document.querySelectorAll('.error');
 
-
-
-function validationInput() {
-    console.log(Number(this.value));
-    //Проверки >0 && целое ли число.
-    if (Number(this.value) > 0 && (Number(this.value) ^ 0) === Number(this.value)) {
-        console.log('true');
-        console.log(this.value);
-        //или (Number(this.value) ^ 0) === Number(this.value);
+function validateInput() {
+    if (Number(this.value) > 0 && (Number(this.value) ^ 0) === Number(this.value) &&
+        Number(this.value) <= Number(this.max)) {
         ElementsDom.startBtn.disabled = false;
         ElementsDom.generateBtn.disabled = false;
-        return clearWarningText();
+        clearWarningText();
 
     } else {
-        console.log('false');
-        console.log(this.value);
         console.log(ElementsDom.blocksTextError);
         ElementsDom.startBtn.disabled = true;
         ElementsDom.generateBtn.disabled = true;
-        return inputWarningText();
+        inputWarningText();
     }
 }
 
-function validationStart() {
+function validateStart() {
     if (Number(ElementsDom.inputMin.value) < Number(ElementsDom.inputMax.value)) {
         ElementsDom.startBtn.disabled = false;
-        return buttonStart();
+        buttonStart();
     } else {
-        return inputWarningText();
+        inputWarningText();
     }
 }
 
 function inputWarningText() {
     for (el of ElementsDom.blocksTextError) {
 
-        el.textContent = 'Please, enter correct values!';
-        el.style.color = '#f00';
+        if (ElementsDom.selectLang.value === 'ru') {
+            return el.textContent = 'Пожалуйста введите правильные значения';
+        }
+        return el.textContent = 'Please, enter correct values!';
+
     }
 }
 

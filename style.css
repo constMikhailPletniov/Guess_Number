@@ -651,6 +651,9 @@ footer {
         font-size: 13px;
     }
 }
+html:lang(ru){
+    color: #36DB5A;
+}
 
 @media screen and (max-width: 540px) {
 

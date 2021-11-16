@@ -26,7 +26,7 @@ const SelectorsCss = {
     classParagraphInstrationOne: '.paragraph_instruction_one',
     classParagraphInstrationTwo: '.paragraph_instruction_two',
     classOffer: '.offer',
-
+    html: 'html'
 };
 
 const ElementsDom = {
@@ -52,6 +52,7 @@ const ElementsDom = {
     theme: document.querySelector(SelectorsCss.idTheme),
     btnClear: document.querySelector(SelectorsCss.idBtnClear),
     selectLang: document.querySelector(SelectorsCss.idLang),
-    title: document.querySelector(SelectorsCss.title)
+    title: document.querySelector(SelectorsCss.title),
+    html: document.querySelector(SelectorsCss.html)
 };
 

@@ -1,5 +1,8 @@
 function changeLanguage() {
     const selectLang = ElementsDom.selectLang.value;
+    if(selectLang === 'ru'){
+        ElementsDom.html.lang = 'ru';
+    }
     for (const key in languageArray) {
         document.querySelector(key).textContent = languageArray[key][selectLang];
     }

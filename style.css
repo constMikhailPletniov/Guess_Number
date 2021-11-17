@@ -163,10 +163,8 @@ label {
     font-size: 16px;
     box-sizing: border-box;
     width: 50px;
-    height: 30px;
-    border: solid 1px gray;
-    background: #ff8fa3;
-    border-radius: 40px;
+    height: 25px;
+
 }
 
 .instruction {

@@ -9,7 +9,7 @@ let count = 0;
 let prevDistance = 0;
 let userValueDistance = 0;
 
-ElementsDom.startBtn.addEventListener('click', validateStart);
+ElementsDom.formStartPage.addEventListener('submit', validateStart);
 ElementsDom.generateBtn.addEventListener('click', buttonGenerate);
 ElementsDom.exitBtn.addEventListener('click', buttonExit);
 ElementsDom.inputMin.addEventListener('input', validateInput);

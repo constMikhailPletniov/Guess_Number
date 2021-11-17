@@ -41,5 +41,5 @@ function buttonExit() {
     }
     ElementsDom.totalNumbersOfAttempts.textcontent = "";
     ElementsDom.divGreetings.textContent = "";
-
+    ElementsDom.formStartPage.removeEventListener('submit', validateStart);
 }

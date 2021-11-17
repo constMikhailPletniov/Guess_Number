@@ -12,5 +12,8 @@ function changeLanguage() {
     for (const key in objectTitleArray) {
         document.querySelector(key).title = objectTitleArray[key][selectLang];
     }
+    for (const key in languageArray) {
+        document.querySelector(key).value = languageArray[key][selectLang];
+    }
 
 }

@@ -1,5 +1,4 @@
 
-
 for (let i = 0; i < ElementsDom.inputs.length; i++) {
     ElementsDom.inputs[i].addEventListener('keypress', function (e) {
         if (e.key == 'Enter') {

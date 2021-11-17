@@ -151,7 +151,7 @@ label {
 }
 
 .rules-wrapper {
-    width: 70px;
+    width: 34px;
     align-items: center;
     text-align: center;
 }
@@ -178,7 +178,7 @@ label {
     border-radius: 5px;
     z-index: 999;
     position: absolute;
-    top: 52.3%;
+    top: 54%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -194,6 +194,11 @@ label {
     text-align: center;
 }
 
+.question-img{
+    width: 23px;
+    height: 23px;
+}
+
 #lang {
     text-align: center;
     cursor: pointer;
@@ -203,7 +208,7 @@ label {
     width: 50px;
     height: 30px;
     border: solid 1px gray;
-    background: #ff8fa3;
+    background: #8187dc;
     border-radius: 40px;
 }
 
@@ -374,7 +379,7 @@ h2 {
 }
 
 .wrapper-btn-change {
-    width: 50px;
+    width: 70px;
     /*===*/
     cursor: pointer;
     text-align: center;

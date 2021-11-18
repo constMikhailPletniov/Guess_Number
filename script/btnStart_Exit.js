@@ -28,9 +28,9 @@ function buttonExit() {
     userValueDistance = 0;
 
     ElementsDom.generateBtn.disabled = false;
-    ElementsDom.inputMin.value = '';
-    ElementsDom.inputMax.value = '';
-    ElementsDom.inputAttempts.value = '';
+    ElementsDom.inputMin.value = "";
+    ElementsDom.inputMax.value = "";
+    ElementsDom.inputAttempts.value = "";
     ElementsDom.inputUser.value = "";
     ElementsDom.divOut.textContent = "";
     ElementsDom.remainingAttempts.textContent = "";
@@ -41,5 +41,4 @@ function buttonExit() {
     }
     ElementsDom.totalNumbersOfAttempts.textcontent = "";
     ElementsDom.divGreetings.textContent = "";
-    ElementsDom.formStartPage.removeEventListener('submit', validateStart);
 }

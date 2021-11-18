@@ -34,7 +34,7 @@ const languageArray = {
     },
 
     '.btn-generate': {
-        'ru': 'ПОРОЖДАТЬ',
+        'ru': 'ГЕНЕРИРОВАТЬ',
         'en': 'GENERATE'
     },
 

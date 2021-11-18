@@ -13,7 +13,8 @@ function validateInput() {
     }
 }
 
-function validateStart() {
+function validateStart(e) {
+    e.preventDefault();
 
     if (Number(ElementsDom.inputMin.value) < Number(ElementsDom.inputMax.value)) {
         ElementsDom.startBtn.disabled = false;

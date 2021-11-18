@@ -154,9 +154,7 @@
                                 </div>
                                 <div class="buttons-generate-wrapper">
                                     <button class="btn-generate"
-                                        title="This button will check if the number you entered is correct">
-                                        GENERATE
-                                    </button>
+                                        title="This button will check if the number you entered is correct">GENERATE</button>
                                 </div>
                             </div>
                         </div>
@@ -174,6 +172,14 @@
 
     <footer></footer>
 
+    <div id="mocha"></div>
+    <div id="messages"></div>
+    <div id="fixtures"></div>
+    <script src="https://cdn.rawgit.com/Automattic/expect.js/0.3.1/index.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/2.2.2/faker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mocha/8.0.1/mocha.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chai/1.4.1/chai.js"></script>
+
     <script src="./helpers/reset.js"></script>
     <script src="./script/domObject.js"></script>
     <script src="./helpers/language.js"></script>
@@ -184,7 +190,12 @@
     <script src="./script/validation.js"></script>
     <script src="./script/changeLanguage.js"></script>
     <script src="./script/app.js"></script>
+    <script>mocha.setup('bdd')</script>
 
+    <script src="../test/index.spec.js"></script>
+    <script>
+        mocha.run();
+    </script>
 </body>
 
 </html>

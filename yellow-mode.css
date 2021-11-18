@@ -93,9 +93,6 @@ footer {
         margin: auto;
     }
 
-    /*.container-wrapper, .field-for-userValue {*/
-    /*    width: 100%;*/
-    /*}*/
     #btn-clear, #btn-start {
         height: 34px;
         width: 150px;
@@ -104,11 +101,6 @@ footer {
     .btn-generate, .btn-exit {
         height: 34px;
         width: 150px;
-    }
-
-    .logo {
-        width: 150px;
-        font-size: 21px;
     }
 
     .game-block {
@@ -123,8 +115,6 @@ footer {
     .game-page-window {
         width: 370px;
         height: 120px;
-        /*margin-top: 30px;*/
-        /*padding-top: 32px;*/
     }
 
     .greetings, .total-number-of-attempts {
@@ -204,11 +194,6 @@ footer {
         width: 150px;
     }
 
-    .logo {
-        width: 150px;
-        font-size: 21px;
-    }
-
     .game-block {
         height: 420px;
         width: 410px;
@@ -263,8 +248,11 @@ footer {
     }
 }
 
-@media screen and (max-width: 540px) {
+/*html:lang(ru) {*/
+/*    color: #36DB5A;*/
+/*}*/
 
+@media screen and (max-width: 540px) {
     .instruction {
         width: 220px;
         height: 205px;
@@ -272,13 +260,8 @@ footer {
         line-height: 5px;
     }
 
-    .logo {
-        width: 108px;
-        font-size: 14px;
-    }
-
     .container {
-        min-width: 300px;
+        max-width: 200px;
         height: 260px;
         width: 100%;
     }
@@ -301,7 +284,7 @@ footer {
         max-width: 300px;
     }
 
-    img {
+    img #fireworks {
         display: none;
     }
 
@@ -330,20 +313,20 @@ footer {
         margin: auto;
     }
 
-    .rules, #btn-change-subject, #lang {
-        width: 40px;
-        height: 18px;
-        font-size: 13px;
-    }
+    /*.rules, #btn-change-subject, #lang {*/
+    /*    width: 40px;*/
+    /*    height: 18px;*/
+    /*    font-size: 13px;*/
+    /*}*/
 
     .greetings, .total-number-of-attempts {
-        width: 297px;
+        width: 200px;
         font-size: 17px;;
         line-height: 22px;
     }
 
     .game-page-window {
-        width: 288px;
+        width: 200px;
         height: 110px;
     }
 
@@ -361,7 +344,9 @@ footer {
     }
 
     .error {
-        font-size: 16px;
+        font-size: 11px;
+        color: #f54c4c;
+        margin-top: 5px;
     }
 
     .btn-generate, .btn-exit {
@@ -372,7 +357,10 @@ footer {
     .out, .remaining-attempts {
         font-size: 17px;
         line-height: 22px;
-        max-width: 279px;
+        max-width: 200px;
     }
 }
+
+
+
 
